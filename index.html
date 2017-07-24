@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>������ʦ��ѡ� - ����ʱ��</title>
+    <title>最美教师评选活动 - 更新时间</title>
     
     <!-- Bootstrap -->
     <link href="http://apps.bdimg.com/libs/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
@@ -65,7 +65,7 @@
         var nowS = myDate.getSeconds();
 
         if(nowM%20<1){
-            document.getElementById("next-time").innerHTML = "���ڸ��������У�"+ (parseInt(60-nowS,10)).toString() +"���ˢ��ҳ�桭��";
+            document.getElementById("next-time").innerHTML = "正在更新数据中，"+ (parseInt(60-nowS,10)).toString() +"秒后将刷新页面……";
             flag = true;
         }
         else{
@@ -79,18 +79,18 @@
                     nextM=nextM%60;
                     nextH=(nextH+1)%24;
                 }
-                document.title = "������ʦ��ѡʵʱƱ�� - ����ʱ�䣺" + (nextH<10?'0':'') + nextH + ":" + (nextM<10?'0':'') + nextM;
+                document.title = "最美教师评选实时票数 - 更新时间：" + (nextH<10?'0':'') + nextH + ":" + (nextM<10?'0':'') + nextM;
                 nextM = nextM + 20;
                 if(nextM>=60){
                     nextM=nextM%60;
                     nextH=(nextH+1)%24;
                 }
-                document.getElementById("next-time").innerHTML = "�´θ��£�"+ (nextH<10?'0':'') + nextH + ":" + (nextM<10?'0':'') + nextM + ":00";
+                document.getElementById("next-time").innerHTML = "下次更新："+ (nextH<10?'0':'') + nextH + ":" + (nextM<10?'0':'') + nextM + ":00";
                 
             }
         }
         
-        document.getElementById("time").innerHTML = "��ǰʱ�䣺"+ (nowH<10?'0':'') + nowH + ":" + (nowM<10?'0':'') + nowM + ":" +  (nowS<10?'0':'') + nowS;
+        document.getElementById("time").innerHTML = "当前时间："+ (nowH<10?'0':'') + nowH + ":" + (nowM<10?'0':'') + nowM + ":" +  (nowS<10?'0':'') + nowS;
         setTimeout("showtime()",1000);
     }
     </script>
@@ -99,12 +99,12 @@
     <div>
         <div>   
             
-                <h1>2017��³������ʦ��ѡ�ʵʱƱ��</h1>
+                <h1>2017齐鲁最美教师评选活动实时票数</h1>
                 <h3 id="time"><script type="text/javascript">showtime();</script></h3>
                 <h3 id="next-time"><script type="text/javascript">showtime();</script></h3>
-                <h5>Ϊ�˼��ٶԷ�������ѹ����ÿ20���Ӹ���һ�����ݡ�</h5>
-                <h5><b><font color="green">����������Բ鿴��ʷƱ���仯����</font></b></h5>
-                <h5><u>����ʵ���Ұ�Ȩ����&copy;2017</u></h5>
+                <h5>为了减少对服务器的压力，每20分钟更新一次数据。</h5>
+                <h5><b><font color="green">点击姓名可以查看历史票数变化曲线</font></b></h5>
+                <h5><u>机制实验室版权所有&copy;2017</u></h5>
             
         </div>
         <div class="table-container">
@@ -120,23 +120,23 @@
         <tr>
         
             
-            <th class="No asc orderable"><a href="?sort=-No">���</a></th>
+            <th class="No asc orderable"><a href="?sort=-No">序号</a></th>
             
         
             
-            <th class="edit orderable"><a href="?sort=edit">����</a></th>
+            <th class="edit orderable"><a href="?sort=edit">姓名</a></th>
             
         
             
-            <th class="Address orderable"><a href="?sort=Address">��λ</a></th>
+            <th class="Address orderable"><a href="?sort=Address">单位</a></th>
             
         
             
-            <th class="Category orderable"><a href="?sort=Category">����</a></th>
+            <th class="Category orderable"><a href="?sort=Category">分区</a></th>
             
         
             
-            <th class="Vote orderable"><a href="?sort=Vote">Ʊ��</a></th>
+            <th class="Vote orderable"><a href="?sort=Vote">票数</a></th>
             
         
         </tr>
@@ -151,12 +151,12 @@
             
                 <td class="No">1</td>
             
-                <td class="edit"><a title="����鿴[������]����ʷƱ���仯����" href="/chart/?id=1">������</a></td>
+                <td class="edit"><a title="点击查看[曲淑珍]的历史票数变化曲线" href="/chart/?id=1">曲淑珍</a></td>
             
-                <td class="Address">�ൺƽ��������ѧ
+                <td class="Address">青岛平度西关中学
 </td>
             
-                <td class="Category">�ൺ</td>
+                <td class="Category">青岛</td>
             
                 <td class="Vote">20482</td>
             
@@ -168,12 +168,12 @@
             
                 <td class="No">2</td>
             
-                <td class="edit"><a title="����鿴[ѦԾ��]����ʷƱ���仯����" href="/chart/?id=2">ѦԾ��</a></td>
+                <td class="edit"><a title="点击查看[薛跃娥]的历史票数变化曲线" href="/chart/?id=2">薛跃娥</a></td>
             
-                <td class="Address">�ൺ�лƵ������꽭·��һСѧ
+                <td class="Address">青岛市黄岛区嘉陵江路第一小学
 </td>
             
-                <td class="Category">�ൺ</td>
+                <td class="Category">青岛</td>
             
                 <td class="Vote">17105</td>
             
@@ -185,12 +185,12 @@
             
                 <td class="No">3</td>
             
-                <td class="edit"><a title="����鿴[����]����ʷƱ���仯����" href="/chart/?id=3">����</a></td>
+                <td class="edit"><a title="点击查看[王向华]的历史票数变化曲线" href="/chart/?id=3">王向华</a></td>
             
-                <td class="Address">��Ӫ�кӿ���ʵ��ѧУ
+                <td class="Address">东营市河口区实验学校
 </td>
             
-                <td class="Category">��Ӫ</td>
+                <td class="Category">东营</td>
             
                 <td class="Vote">15958</td>
             
@@ -202,12 +202,12 @@
             
                 <td class="No">4</td>
             
-                <td class="edit"><a title="����鿴[����־]����ʷƱ���仯����" href="/chart/?id=4">����־</a></td>
+                <td class="edit"><a title="点击查看[刘乃志]的历史票数变化曲线" href="/chart/?id=4">刘乃志</a></td>
             
-                <td class="Address">�����еڰ���ѧ
+                <td class="Address">胶州市第八中学
 </td>
             
-                <td class="Category">�ൺ</td>
+                <td class="Category">青岛</td>
             
                 <td class="Vote">15366</td>
             
@@ -219,12 +219,12 @@
             
                 <td class="No">5</td>
             
-                <td class="edit"><a title="����鿴[�켪��]����ʷƱ���仯����" href="/chart/?id=5">�켪��</a></td>
+                <td class="edit"><a title="点击查看[徐吉香]的历史票数变化曲线" href="/chart/?id=5">徐吉香</a></td>
             
-                <td class="Address">�ൺƽ����԰�ֵ�֣��·Сѧ
+                <td class="Address">青岛平度李园街道郑州路小学
 </td>
             
-                <td class="Category">�ൺ</td>
+                <td class="Category">青岛</td>
             
                 <td class="Vote">14866</td>
             
@@ -236,12 +236,12 @@
             
                 <td class="No">6</td>
             
-                <td class="edit"><a title="����鿴[������]����ʷƱ���仯����" href="/chart/?id=6">������</a></td>
+                <td class="edit"><a title="点击查看[宋瑞兰]的历史票数变化曲线" href="/chart/?id=6">宋瑞兰</a></td>
             
-                <td class="Address">ɽ��ʡ�ൺ����ʮ����ѧ
+                <td class="Address">山东省青岛第五十八中学
 </td>
             
-                <td class="Category">�ൺ</td>
+                <td class="Category">青岛</td>
             
                 <td class="Vote">11437</td>
             
@@ -253,12 +253,12 @@
             
                 <td class="No">7</td>
             
-                <td class="edit"><a title="����鿴[������]����ʷƱ���仯����" href="/chart/?id=7">������</a></td>
+                <td class="edit"><a title="点击查看[焦燕南]的历史票数变化曲线" href="/chart/?id=7">焦燕南</a></td>
             
-                <td class="Address">ɽ��ʡ�����ص�һ��ѧ
+                <td class="Address">山东省广饶县第一中学
 </td>
             
-                <td class="Category">��Ӫ</td>
+                <td class="Category">东营</td>
             
                 <td class="Vote">10562</td>
             
@@ -270,12 +270,12 @@
             
                 <td class="No">8</td>
             
-                <td class="edit"><a title="����鿴[�Ժ���]����ʷƱ���仯����" href="/chart/?id=8">�Ժ���</a></td>
+                <td class="edit"><a title="点击查看[丛海林]的历史票数变化曲线" href="/chart/?id=8">丛海林</a></td>
             
-                <td class="Address">�ൺ��ѧ
+                <td class="Address">青岛大学
 </td>
             
-                <td class="Category">��Уר��</td>
+                <td class="Category">高校专区</td>
             
                 <td class="Vote">10523</td>
             
@@ -287,12 +287,12 @@
             
                 <td class="No">9</td>
             
-                <td class="edit"><a title="����鿴[����]����ʷƱ���仯����" href="/chart/?id=9">����</a></td>
+                <td class="edit"><a title="点击查看[和鹏]的历史票数变化曲线" href="/chart/?id=9">和鹏</a></td>
             
-                <td class="Address">��̩��ѧ
+                <td class="Address">新泰中学
 </td>
             
-                <td class="Category">̩��</td>
+                <td class="Category">泰安</td>
             
                 <td class="Vote">10521</td>
             
@@ -304,12 +304,12 @@
             
                 <td class="No">10</td>
             
-                <td class="edit"><a title="����鿴[������]����ʷƱ���仯����" href="/chart/?id=10">������</a></td>
+                <td class="edit"><a title="点击查看[洪善理]的历史票数变化曲线" href="/chart/?id=10">洪善理</a></td>
             
-                <td class="Address">ɽ��ʡ���ʵھ���ѧ
+                <td class="Address">山东省临沂第九中学
 </td>
             
-                <td class="Category">����</td>
+                <td class="Category">临沂</td>
             
                 <td class="Vote">10137</td>
             
@@ -321,12 +321,12 @@
             
                 <td class="No">11</td>
             
-                <td class="edit"><a title="����鿴[�����]����ʷƱ���仯����" href="/chart/?id=11">�����</a></td>
+                <td class="edit"><a title="点击查看[田瑜钦]的历史票数变化曲线" href="/chart/?id=11">田瑜钦</a></td>
             
-                <td class="Address">ĵ����ĵ�����´�ĵ��Сѧ
+                <td class="Address">牡丹区牡丹办事处牡丹小学
 </td>
             
-                <td class="Category">����</td>
+                <td class="Category">菏泽</td>
             
                 <td class="Vote">10048</td>
             
@@ -338,12 +338,12 @@
             
                 <td class="No">12</td>
             
-                <td class="edit"><a title="����鿴[����]����ʷƱ���仯����" href="/chart/?id=12">����</a></td>
+                <td class="edit"><a title="点击查看[方娜]的历史票数变化曲线" href="/chart/?id=12">方娜</a></td>
             
-                <td class="Address">�ൺ�ķ�ʵ��Сѧ
+                <td class="Address">青岛四方实验小学
 </td>
             
-                <td class="Category">�ൺ</td>
+                <td class="Category">青岛</td>
             
                 <td class="Vote">9751</td>
             
@@ -355,12 +355,12 @@
             
                 <td class="No">13</td>
             
-                <td class="edit"><a title="����鿴[¬����]����ʷƱ���仯����" href="/chart/?id=13">¬����</a></td>
+                <td class="edit"><a title="点击查看[卢玉兰]的历史票数变化曲线" href="/chart/?id=13">卢玉兰</a></td>
             
-                <td class="Address">��Ӫ��ʵ����ѧ
+                <td class="Address">东营市实验中学
 </td>
             
-                <td class="Category">��Ӫ</td>
+                <td class="Category">东营</td>
             
                 <td class="Vote">9492</td>
             
@@ -372,12 +372,12 @@
             
                 <td class="No">14</td>
             
-                <td class="edit"><a title="����鿴[����ϼ]����ʷƱ���仯����" href="/chart/?id=14">����ϼ</a></td>
+                <td class="edit"><a title="点击查看[吕春霞]的历史票数变化曲线" href="/chart/?id=14">吕春霞</a></td>
             
-                <td class="Address">������ĵ������21������ѧ
+                <td class="Address">菏泽市牡丹区第21初级中学
 </td>
             
-                <td class="Category">����</td>
+                <td class="Category">菏泽</td>
             
                 <td class="Vote">9325</td>
             
@@ -389,12 +389,12 @@
             
                 <td class="No">15</td>
             
-                <td class="edit"><a title="����鿴[�¿���]����ʷƱ���仯����" href="/chart/?id=15">�¿���</a></td>
+                <td class="edit"><a title="点击查看[陈俊伊]的历史票数变化曲线" href="/chart/?id=15">陈俊伊</a></td>
             
-                <td class="Address">ɽ������ѧԺ���ֽ���ѧԺ
+                <td class="Address">山东艺术学院音乐教育学院
 </td>
             
-                <td class="Category">��Уר��</td>
+                <td class="Category">高校专区</td>
             
                 <td class="Vote">9129</td>
             
@@ -406,12 +406,12 @@
             
                 <td class="No">16</td>
             
-                <td class="edit"><a title="����鿴[������]����ʷƱ���仯����" href="/chart/?id=16">������</a></td>
+                <td class="edit"><a title="点击查看[王丽君]的历史票数变化曲线" href="/chart/?id=16">王丽君</a></td>
             
-                <td class="Address">΢ɽ��ʵ����ѧ
+                <td class="Address">微山县实验中学
 </td>
             
-                <td class="Category">����</td>
+                <td class="Category">济宁</td>
             
                 <td class="Vote">8484</td>
             
@@ -423,12 +423,12 @@
             
                 <td class="No">17</td>
             
-                <td class="edit"><a title="����鿴[���ϼ]����ʷƱ���仯����" href="/chart/?id=17">���ϼ</a></td>
+                <td class="edit"><a title="点击查看[李彩霞]的历史票数变化曲线" href="/chart/?id=17">李彩霞</a></td>
             
-                <td class="Address">�����ص�����ѧ
+                <td class="Address">高青县第四中学
 </td>
             
-                <td class="Category">�Ͳ�</td>
+                <td class="Category">淄博</td>
             
                 <td class="Vote">8372</td>
             
@@ -440,12 +440,12 @@
             
                 <td class="No">18</td>
             
-                <td class="edit"><a title="����鿴[����¶]����ʷƱ���仯����" href="/chart/?id=18">����¶</a></td>
+                <td class="edit"><a title="点击查看[宋晓露]的历史票数变化曲线" href="/chart/?id=18">宋晓露</a></td>
             
-                <td class="Address">̩��̩ɽʵ����ѧ
+                <td class="Address">泰安泰山实验中学
 </td>
             
-                <td class="Category">̩��</td>
+                <td class="Category">泰安</td>
             
                 <td class="Vote">8329</td>
             
@@ -457,12 +457,12 @@
             
                 <td class="No">19</td>
             
-                <td class="edit"><a title="����鿴[ţͬ��]����ʷƱ���仯����" href="/chart/?id=19">ţͬ��</a></td>
+                <td class="edit"><a title="点击查看[牛同和]的历史票数变化曲线" href="/chart/?id=19">牛同和</a></td>
             
-                <td class="Address">�ൺ�лƵ�������ѧУ
+                <td class="Address">青岛市黄岛区弘文学校
 </td>
             
-                <td class="Category">�ൺ</td>
+                <td class="Category">青岛</td>
             
                 <td class="Vote">8308</td>
             
@@ -474,12 +474,12 @@
             
                 <td class="No">20</td>
             
-                <td class="edit"><a title="����鿴[�]����ʷƱ���仯����" href="/chart/?id=20">�</a></td>
+                <td class="edit"><a title="点击查看[李华]的历史票数变化曲线" href="/chart/?id=20">李华</a></td>
             
-                <td class="Address">��ƽ��ʵ��Сѧ
+                <td class="Address">茌平县实验小学
 </td>
             
-                <td class="Category">�ĳ�</td>
+                <td class="Category">聊城</td>
             
                 <td class="Vote">8173</td>
             
@@ -491,12 +491,12 @@
             
                 <td class="No">21</td>
             
-                <td class="edit"><a title="����鿴[������]����ʷƱ���仯����" href="/chart/?id=21">������</a></td>
+                <td class="edit"><a title="点击查看[李遵文]的历史票数变化曲线" href="/chart/?id=21">李遵文</a></td>
             
-                <td class="Address">����ѧԺ������ѧ
+                <td class="Address">济宁学院附属中学
 </td>
             
-                <td class="Category">����</td>
+                <td class="Category">济宁</td>
             
                 <td class="Vote">8166</td>
             
@@ -508,12 +508,12 @@
             
                 <td class="No">22</td>
             
-                <td class="edit"><a title="����鿴[��ѩ��]����ʷƱ���仯����" href="/chart/?id=22">��ѩ��</a></td>
+                <td class="edit"><a title="点击查看[蒋雪珍]的历史票数变化曲线" href="/chart/?id=22">蒋雪珍</a></td>
             
-                <td class="Address">�������������ųǽֵ�����Сѧ
+                <td class="Address">滨州市阳信县信城街道中心小学
 </td>
             
-                <td class="Category">����</td>
+                <td class="Category">滨州</td>
             
                 <td class="Vote">8035</td>
             
@@ -525,12 +525,12 @@
             
                 <td class="No">23</td>
             
-                <td class="edit"><a title="����鿴[�ﺣ��]����ʷƱ���仯����" href="/chart/?id=23">�ﺣ��</a></td>
+                <td class="edit"><a title="点击查看[孙海燕]的历史票数变化曲线" href="/chart/?id=23">孙海燕</a></td>
             
-                <td class="Address">�ٹ����ͽ�������
+                <td class="Address">寿光世纪教育集团
 </td>
             
-                <td class="Category">Ϋ��</td>
+                <td class="Category">潍坊</td>
             
                 <td class="Vote">8008</td>
             
@@ -542,12 +542,12 @@
             
                 <td class="No">24</td>
             
-                <td class="edit"><a title="����鿴[����]����ʷƱ���仯����" href="/chart/?id=24">����</a></td>
+                <td class="edit"><a title="点击查看[王煦]的历史票数变化曲线" href="/chart/?id=24">王煦</a></td>
             
-                <td class="Address">�����о���·Сѧ
+                <td class="Address">济南市经五路小学
 </td>
             
-                <td class="Category">����</td>
+                <td class="Category">济南</td>
             
                 <td class="Vote">7946</td>
             
@@ -559,12 +559,12 @@
             
                 <td class="No">25</td>
             
-                <td class="edit"><a title="����鿴[��ӱ]����ʷƱ���仯����" href="/chart/?id=25">��ӱ</a></td>
+                <td class="edit"><a title="点击查看[李颖]的历史票数变化曲线" href="/chart/?id=25">李颖</a></td>
             
-                <td class="Address">�����صڶ�ʵ����ѧ
+                <td class="Address">高唐县第二实验中学
 </td>
             
-                <td class="Category">�ĳ�</td>
+                <td class="Category">聊城</td>
             
                 <td class="Vote">7936</td>
             
@@ -576,12 +576,12 @@
             
                 <td class="No">26</td>
             
-                <td class="edit"><a title="����鿴[����]����ʷƱ���仯����" href="/chart/?id=26">����</a></td>
+                <td class="edit"><a title="点击查看[黄鑫]的历史票数变化曲线" href="/chart/?id=26">黄鑫</a></td>
             
-                <td class="Address">������Τ԰�׶�԰
+                <td class="Address">兖州区韦园幼儿园
 </td>
             
-                <td class="Category">����</td>
+                <td class="Category">济宁</td>
             
                 <td class="Vote">7931</td>
             
@@ -593,12 +593,12 @@
             
                 <td class="No">27</td>
             
-                <td class="edit"><a title="����鿴[����÷]����ʷƱ���仯����" href="/chart/?id=27">����÷</a></td>
+                <td class="edit"><a title="点击查看[刘红梅]的历史票数变化曲线" href="/chart/?id=27">刘红梅</a></td>
             
-                <td class="Address">���������ǵڶ���ѧ
+                <td class="Address">济南市历城第二中学
 </td>
             
-                <td class="Category">����</td>
+                <td class="Category">济南</td>
             
                 <td class="Vote">7883</td>
             
@@ -610,12 +610,12 @@
             
                 <td class="No">28</td>
             
-                <td class="edit"><a title="����鿴[�����]����ʷƱ���仯����" href="/chart/?id=28">�����</a></td>
+                <td class="edit"><a title="点击查看[王瑞昌]的历史票数变化曲线" href="/chart/?id=28">王瑞昌</a></td>
             
-                <td class="Address">�Ͳ����¼�����ҵ����������Сѧ
+                <td class="Address">淄博高新技术产业开发区第五小学
 </td>
             
-                <td class="Category">�Ͳ�</td>
+                <td class="Category">淄博</td>
             
                 <td class="Vote">7874</td>
             
@@ -627,12 +627,12 @@
             
                 <td class="No">29</td>
             
-                <td class="edit"><a title="����鿴[������]����ʷƱ���仯����" href="/chart/?id=29">������</a></td>
+                <td class="edit"><a title="点击查看[方东旭]的历史票数变化曲线" href="/chart/?id=29">方东旭</a></td>
             
-                <td class="Address">ɽ���ĳǵڶ���ѧ
+                <td class="Address">山东聊城第二中学
 </td>
             
-                <td class="Category">�ĳ�</td>
+                <td class="Category">聊城</td>
             
                 <td class="Vote">7860</td>
             
@@ -644,12 +644,12 @@
             
                 <td class="No">30</td>
             
-                <td class="edit"><a title="����鿴[���]����ʷƱ���仯����" href="/chart/?id=30">���</a></td>
+                <td class="edit"><a title="点击查看[于婧]的历史票数变化曲线" href="/chart/?id=30">于婧</a></td>
             
-                <td class="Address">������ʵ��ѧУ
+                <td class="Address">莱芜市实验学校
 </td>
             
-                <td class="Category">����</td>
+                <td class="Category">莱芜</td>
             
                 <td class="Vote">7787</td>
             
@@ -661,12 +661,12 @@
             
                 <td class="No">31</td>
             
-                <td class="edit"><a title="����鿴[����ϼ]����ʷƱ���仯����" href="/chart/?id=31">����ϼ</a></td>
+                <td class="edit"><a title="点击查看[杨清霞]的历史票数变化曲线" href="/chart/?id=31">杨清霞</a></td>
             
-                <td class="Address">�Ͳ���������ѧ
+                <td class="Address">淄博市临淄中学
 </td>
             
-                <td class="Category">�Ͳ�</td>
+                <td class="Category">淄博</td>
             
                 <td class="Vote">7769</td>
             
@@ -678,12 +678,12 @@
             
                 <td class="No">32</td>
             
-                <td class="edit"><a title="����鿴[�Ⱞ��]����ʷƱ���仯����" href="/chart/?id=32">�Ⱞ��</a></td>
+                <td class="edit"><a title="点击查看[解爱芹]的历史票数变化曲线" href="/chart/?id=32">解爱芹</a></td>
             
-                <td class="Address">��Ұ�ظ߼���ѧ
+                <td class="Address">巨野县高级中学
 </td>
             
-                <td class="Category">����</td>
+                <td class="Category">菏泽</td>
             
                 <td class="Vote">7728</td>
             
@@ -695,12 +695,12 @@
             
                 <td class="No">33</td>
             
-                <td class="edit"><a title="����鿴[������]����ʷƱ���仯����" href="/chart/?id=33">������</a></td>
+                <td class="edit"><a title="点击查看[刘永红]的历史票数变化曲线" href="/chart/?id=33">刘永红</a></td>
             
-                <td class="Address">�й�ʯ�ʹ�ѧ��������
+                <td class="Address">中国石油大学（华东）
 </td>
             
-                <td class="Category">��Уר��</td>
+                <td class="Category">高校专区</td>
             
                 <td class="Vote">7717</td>
             
@@ -712,12 +712,12 @@
             
                 <td class="No">34</td>
             
-                <td class="edit"><a title="����鿴[���]����ʷƱ���仯����" href="/chart/?id=34">���</a></td>
+                <td class="edit"><a title="点击查看[李堯]的历史票数变化曲线" href="/chart/?id=34">李堯</a></td>
             
-                <td class="Address">�������﹢����ѧ
+                <td class="Address">济阳县孙耿镇中学
 </td>
             
-                <td class="Category">����</td>
+                <td class="Category">济南</td>
             
                 <td class="Vote">7596</td>
             
@@ -729,12 +729,12 @@
             
                 <td class="No">35</td>
             
-                <td class="edit"><a title="����鿴[�ƴ���]����ʷƱ���仯����" href="/chart/?id=35">�ƴ���</a></td>
+                <td class="edit"><a title="点击查看[黄传真]的历史票数变化曲线" href="/chart/?id=35">黄传真</a></td>
             
-                <td class="Address">ɽ����ѧ
+                <td class="Address">山东大学
 </td>
             
-                <td class="Category">��Уר��</td>
+                <td class="Category">高校专区</td>
             
                 <td class="Vote">7592</td>
             
@@ -746,12 +746,12 @@
             
                 <td class="No">36</td>
             
-                <td class="edit"><a title="����鿴[����Ƽ]����ʷƱ���仯����" href="/chart/?id=36">����Ƽ</a></td>
+                <td class="edit"><a title="点击查看[苏衍萍]的历史票数变化曲线" href="/chart/?id=36">苏衍萍</a></td>
             
-                <td class="Address">̩ɽҽѧԺ
+                <td class="Address">泰山医学院
 </td>
             
-                <td class="Category">��Уר��</td>
+                <td class="Category">高校专区</td>
             
                 <td class="Vote">7419</td>
             
@@ -763,12 +763,12 @@
             
                 <td class="No">37</td>
             
-                <td class="edit"><a title="����鿴[Ԭ�¶�]����ʷƱ���仯����" href="/chart/?id=37">Ԭ�¶�</a></td>
+                <td class="edit"><a title="点击查看[袁月娥]的历史票数变化曲线" href="/chart/?id=37">袁月娥</a></td>
             
-                <td class="Address">Ϋ������˫��ѧУ
+                <td class="Address">潍坊高新双语学校
 </td>
             
-                <td class="Category">Ϋ��</td>
+                <td class="Category">潍坊</td>
             
                 <td class="Vote">7408</td>
             
@@ -780,12 +780,12 @@
             
                 <td class="No">38</td>
             
-                <td class="edit"><a title="����鿴[Ф����]����ʷƱ���仯����" href="/chart/?id=38">Ф����</a></td>
+                <td class="edit"><a title="点击查看[肖俊华]的历史票数变化曲线" href="/chart/?id=38">肖俊华</a></td>
             
-                <td class="Address">ɽ��������ѧ
+                <td class="Address">山东建筑大学
 </td>
             
-                <td class="Category">��Уר��</td>
+                <td class="Category">高校专区</td>
             
                 <td class="Vote">7344</td>
             
@@ -797,12 +797,12 @@
             
                 <td class="No">39</td>
             
-                <td class="edit"><a title="����鿴[����]����ʷƱ���仯����" href="/chart/?id=39">����</a></td>
+                <td class="edit"><a title="点击查看[李琦]的历史票数变化曲线" href="/chart/?id=39">李琦</a></td>
             
-                <td class="Address">̩ɽְҵ����ѧԺ
+                <td class="Address">泰山职业技术学院
 </td>
             
-                <td class="Category">��Уר��</td>
+                <td class="Category">高校专区</td>
             
                 <td class="Vote">7303</td>
             
@@ -814,12 +814,12 @@
             
                 <td class="No">40</td>
             
-                <td class="edit"><a title="����鿴[����Ȩ]����ʷƱ���仯����" href="/chart/?id=40">����Ȩ</a></td>
+                <td class="edit"><a title="点击查看[李修权]的历史票数变化曲线" href="/chart/?id=40">李修权</a></td>
             
-                <td class="Address">��ׯ�е�ʮ����ѧ
+                <td class="Address">枣庄市第十五中学
 </td>
             
-                <td class="Category">��ׯ</td>
+                <td class="Category">枣庄</td>
             
                 <td class="Vote">7283</td>
             
@@ -831,12 +831,12 @@
             
                 <td class="No">41</td>
             
-                <td class="edit"><a title="����鿴[������]����ʷƱ���仯����" href="/chart/?id=41">������</a></td>
+                <td class="edit"><a title="点击查看[于政红]的历史票数变化曲线" href="/chart/?id=41">于政红</a></td>
             
-                <td class="Address">ɽ��ְҵѧԺ
+                <td class="Address">山东职业学院
 </td>
             
-                <td class="Category">��Уר��</td>
+                <td class="Category">高校专区</td>
             
                 <td class="Vote">7117</td>
             
@@ -848,12 +848,12 @@
             
                 <td class="No">42</td>
             
-                <td class="edit"><a title="����鿴[ׯ򯻪]����ʷƱ���仯����" href="/chart/?id=42">ׯ򯻪</a></td>
+                <td class="edit"><a title="点击查看[庄虔华]的历史票数变化曲线" href="/chart/?id=42">庄虔华</a></td>
             
-                <td class="Address">ɽ������ѧԺ
+                <td class="Address">山东艺术学院
 </td>
             
-                <td class="Category">��Уר��</td>
+                <td class="Category">高校专区</td>
             
                 <td class="Vote">7116</td>
             
@@ -865,12 +865,12 @@
             
                 <td class="No">43</td>
             
-                <td class="edit"><a title="����鿴[���ƾ�]����ʷƱ���仯����" href="/chart/?id=43">���ƾ�</a></td>
+                <td class="edit"><a title="点击查看[邢善军]的历史票数变化曲线" href="/chart/?id=43">邢善军</a></td>
             
-                <td class="Address">��ׯ�еڰ���ѧ��У
+                <td class="Address">枣庄市第八中学南校
 </td>
             
-                <td class="Category">��ׯ</td>
+                <td class="Category">枣庄</td>
             
                 <td class="Vote">7072</td>
             
@@ -882,12 +882,12 @@
             
                 <td class="No">44</td>
             
-                <td class="edit"><a title="����鿴[������]����ʷƱ���仯����" href="/chart/?id=44">������</a></td>
+                <td class="edit"><a title="点击查看[耿俊红]的历史票数变化曲线" href="/chart/?id=44">耿俊红</a></td>
             
-                <td class="Address">�����е³�������ѧУ
+                <td class="Address">德州市德城区明诚学校
 </td>
             
-                <td class="Category">����</td>
+                <td class="Category">德州</td>
             
                 <td class="Vote">7030</td>
             
@@ -899,12 +899,12 @@
             
                 <td class="No">45</td>
             
-                <td class="edit"><a title="����鿴[����]����ʷƱ���仯����" href="/chart/?id=45">����</a></td>
+                <td class="edit"><a title="点击查看[张莉芳]的历史票数变化曲线" href="/chart/?id=45">张莉芳</a></td>
             
-                <td class="Address">�����ط�˳�ʵ��ѧУ
+                <td class="Address">利津县凤凰城实验学校
 </td>
             
-                <td class="Category">��Ӫ</td>
+                <td class="Category">东营</td>
             
                 <td class="Vote">6896</td>
             
@@ -916,12 +916,12 @@
             
                 <td class="No">46</td>
             
-                <td class="edit"><a title="����鿴[�Ŵ�Ӥ]����ʷƱ���仯����" href="/chart/?id=46">�Ŵ�Ӥ</a></td>
+                <td class="edit"><a title="点击查看[张春婴]的历史票数变化曲线" href="/chart/?id=46">张春婴</a></td>
             
-                <td class="Address">������Ӣ��ѧ
+                <td class="Address">济南育英中学
 </td>
             
-                <td class="Category">����</td>
+                <td class="Category">济南</td>
             
                 <td class="Vote">6774</td>
             
@@ -933,12 +933,12 @@
             
                 <td class="No">47</td>
             
-                <td class="edit"><a title="����鿴[������]����ʷƱ���仯����" href="/chart/?id=47">������</a></td>
+                <td class="edit"><a title="点击查看[初东丽]的历史票数变化曲线" href="/chart/?id=47">初东丽</a></td>
             
-                <td class="Address">ɽ���ṤְҵѧԺ
+                <td class="Address">山东轻工职业学院
 </td>
             
-                <td class="Category">��Уר��</td>
+                <td class="Category">高校专区</td>
             
                 <td class="Vote">6683</td>
             
@@ -950,12 +950,12 @@
             
                 <td class="No">48</td>
             
-                <td class="edit"><a title="����鿴[�ɻ�]����ʷƱ���仯����" href="/chart/?id=48">�ɻ�</a></td>
+                <td class="edit"><a title="点击查看[窦成华]的历史票数变化曲线" href="/chart/?id=48">窦成华</a></td>
             
-                <td class="Address">������˴��Сѧ
+                <td class="Address">济南市舜耕小学
 </td>
             
-                <td class="Category">����</td>
+                <td class="Category">济南</td>
             
                 <td class="Vote">6462</td>
             
@@ -967,12 +967,12 @@
             
                 <td class="No">49</td>
             
-                <td class="edit"><a title="����鿴[����Ƽ]����ʷƱ���仯����" href="/chart/?id=49">����Ƽ</a></td>
+                <td class="edit"><a title="点击查看[姬翠萍]的历史票数变化曲线" href="/chart/?id=49">姬翠萍</a></td>
             
-                <td class="Address">�Ͳ����ʹ�������������Сѧ
+                <td class="Address">淄博市淄川区昆仑镇中心小学
 </td>
             
-                <td class="Category">�Ͳ�</td>
+                <td class="Category">淄博</td>
             
                 <td class="Vote">6450</td>
             
@@ -984,12 +984,12 @@
             
                 <td class="No">50</td>
             
-                <td class="edit"><a title="����鿴[������]����ʷƱ���仯����" href="/chart/?id=50">������</a></td>
+                <td class="edit"><a title="点击查看[刘福兴]的历史票数变化曲线" href="/chart/?id=50">刘福兴</a></td>
             
-                <td class="Address">�����и���������Сѧ
+                <td class="Address">青州市高柳镇阳河小学
 </td>
             
-                <td class="Category">Ϋ��</td>
+                <td class="Category">潍坊</td>
             
                 <td class="Vote">6444</td>
             
@@ -1035,7 +1035,7 @@
 
         </div>
         <div>
-            <h5>ҳ��ˢ��ʱ��2017-07-24 23:35:43</h5>
+            <h5>页面刷新时间2017-07-24 23:36:04</h5>
         </div>
     </div>
   </body>
