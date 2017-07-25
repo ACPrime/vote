@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>最美教师评选活动 - 更新时间</title>
+    <title>最美教师评选活动200进60网络投票结果</title>
     
     <!-- Bootstrap -->
     <link href="http://apps.bdimg.com/libs/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
@@ -52,47 +52,7 @@
     h5{ text-align:center; }
     </style>
     
-    <script type="text/javascript">
-    var flag = false;
-    function setReload(){
-        window.location.reload();
-        flag = false;
-    }
-    function showtime()
-    {
-        var myDate = new Date();
-        var nowH = myDate.getHours();
-        var nowM = myDate.getMinutes();
-        var nowS = myDate.getSeconds();
-
-        if(nowM%20<1){
-            document.getElementById("next-time").innerHTML = "正在更新数据中，"+ (parseInt(60-nowS,10)).toString() +"秒后将刷新页面……";
-            flag = true;
-        }
-        else{
-            if(nowM%20==1 && flag){
-                setReload();
-            }
-            else{
-                var nextH = nowH, nextM;
-                nextM=Math.floor(nowM/20)*20;
-                if(nextM>=60){
-                    nextM=nextM%60;
-                    nextH=(nextH+1)%24;
-                }
-                document.title = "最美教师评选实时票数 - 更新时间：" + (nextH<10?'0':'') + nextH + ":" + (nextM<10?'0':'') + nextM;
-                nextM = nextM + 20;
-                if(nextM>=60){
-                    nextM=nextM%60;
-                    nextH=(nextH+1)%24;
-                }
-                document.getElementById("next-time").innerHTML = "下次更新："+ (nextH<10?'0':'') + nextH + ":" + (nextM<10?'0':'') + nextM + ":00";
-                
-            }
-        }
-        
-        document.getElementById("time").innerHTML = "当前时间："+ (nowH<10?'0':'') + nowH + ":" + (nowM<10?'0':'') + nowM + ":" +  (nowS<10?'0':'') + nowS;
-        setTimeout("showtime()",1000);
+    
     }
     </script>
   </head>
@@ -100,10 +60,9 @@
     <div>
         <div>   
             
-                <h1>2017齐鲁最美教师评选活动实时票数</h1>
-                <h3 id="time"><script type="text/javascript">showtime();</script></h3>
-                <h3 id="next-time"><script type="text/javascript">showtime();</script></h3>
-                <h5>为了减少对服务器的压力，每20分钟更新一次数据。</h5>
+                <h1>2017齐鲁最美教师评选活动200进60网络投票结果</h1>
+                <h3>200进60票选已结束，请以官方结果为准。</h3>
+                <h3>最终排名由专家评审和网络投票两部分组成。投票排名不代表最终排名。</h3>
                 <h5><a href="http://172.18.204.163">跳转到内网后</a><b><font color="green">点击姓名可以查看历史票数变化曲线</font></b></h5>
                 <h4><a href="http://mp.weixin.qq.com/s/J9HkJclKqnWymcv2TBUd8A"><u><b><font color="red">点此进入微信投票页面</font></b></u></a>
                 <h5><u>机制实验室版权所有&copy;2017</u></h5>
@@ -1037,7 +996,7 @@
 
         </div>
         <div>
-            <h5>页面刷新时间2017-07-25 09:40:39</h5>
+            <h5>页面刷新时间2017-07-25 10:18:17</h5>
         </div>
     </div>
   </body>
