@@ -1,0 +1,298 @@
+ 
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>最美教师评选活动 - 投票方法</title>
+    <!-- Bootstrap -->
+    <link href="http://apps.bdimg.com/libs/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <style type="text/css">
+    div {
+        font-size: 20px;
+        -webkit-transition: font-size 0.2s ease-out;
+    }
+
+    @media only screen and (max-width: 1200px) {
+        div {
+            font-size: 19px;
+        }
+    }
+
+    @media only screen and (max-width: 1100px) {
+        div {
+            font-size: 18px;
+        }
+    }
+
+    @media only screen and (max-width: 1000px) {
+        div {
+            font-size: 17px;
+        }
+    }
+
+    @media only screen and (max-width: 900px) {
+        div {
+            font-size: 16px;
+        }
+    }
+
+    @media only screen and (max-width: 800px) {
+        div {
+            font-size: 15px;
+        }
+    }
+
+    @media only screen and (max-width: 700px) {
+        div {
+            font-size: 14px;
+        }
+    }
+
+    @media only screen and (max-width: 600px) {
+        div {
+            font-size: 13px;
+        }
+    }
+
+    @media only screen and (max-width: 500px) {
+        div {
+            font-size: 12px;
+        }
+    }
+
+    @media only screen and (max-width: 400px) {
+        div {
+            font-size: 11px;
+        }
+    }
+
+    @media only screen and (max-width: 300px) {
+        div {
+            font-size: 10px;
+        }
+    }
+
+    body {
+        padding-top: 0px;
+    }
+
+    @media screen and (max-width: 600px) {
+        .container {
+            width: 100%;
+            overflow-y: auto;
+            _overflow: auto;
+            margin: 0 0 1em;
+        }
+    }
+
+    @media screen and (min-width: 600px) {
+        .container {
+            width: 660px;
+            overflow-y: auto;
+            _overflow: auto;
+            margin: auto;
+            float: center;
+        }
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    h3 {
+        text-align: center;
+    }
+
+    h4 {
+        text-align: center;
+    }
+
+    h5 {
+        text-align: center;
+    }
+
+    .qy-content2>ul {
+        text-indent: 2em;
+    }
+
+    .first {
+        color: #FF5511;
+        margin-bottom: 20px;
+        margin-top: 30px;
+    }
+
+    .qy-content2 b {
+        color: #ff315d;
+    }
+
+    .qy-content2>ul>li {
+        list-style: none;
+        line-height: 32px;
+        font-size: 16px
+    }
+
+    a.nav {
+        text-align: center;
+        background-color: #3399CC;
+        color: white;
+        border-radius: .3em;
+        padding: .2em 0;
+        position: relative;
+        margin: 0 1.5em;
+        width: 5em;
+        display: inline-block;
+        text-decoration: none;
+        border: solid #67BBDE 1px;
+        border-bottom: solid #67BBDE 4px;
+        text-shadow: 0px 2px 0 #67BBDE;
+        -webkit-transition: all 0.1s ease-out;
+        /* Safari 3.2+, Chrome */
+        -moz-transition: all 0.1s ease-out;
+        /* Firefox 4-15 */
+        -o-transition: all 0.1s ease-out;
+        /* Opera 10.5鈥�12.00 */
+        transition: all 0.1s ease-out;
+        /* Firefox 16+, Opera 12.50+ */
+    }
+
+    .nav-wrapper {
+        text-align: center;
+        padding: 0em 0;
+        clear: both;
+    }
+
+    a.nav.prev {
+        margin-left: 0;
+    }
+
+    a.nav.next {
+        margin-right: 0;
+    }
+
+    a.nav:hover {
+        background-color: #91C9E8;
+    }
+
+    a.nav:active {
+        border-bottom: solid #67BBDE 1px;
+        top: 4px;
+        -webkit-transition: all 0 ease-out;
+        /* Safari 3.2+, Chrome */
+        -moz-transition: all 0 ease-out;
+        /* Firefox 4-15 */
+        -o-transition: all 0 ease-out;
+        /* Opera 10.5鈥�12.00 */
+        transition: all 0 ease-out;
+        /* Firefox 16+, Opera 12.50+ */
+    }
+
+    .nav-wrapper {
+        text-align: center;
+        padding: 1em 0;
+        clear: both;
+    }
+}
+    </style>
+    <script type="text/javascript">
+    var flag = false;
+
+    function setReload() {
+        window.location.reload();
+        flag = false;
+    }
+
+    function showtime() {
+        var myDate = new Date();
+        var nowMM = myDate.getMonth() + 1;
+        var nowD = myDate.getDate();
+        var nowH = myDate.getHours();
+        var nowM = myDate.getMinutes();
+        var nowS = myDate.getSeconds();
+
+        document.getElementById("time").innerHTML = "当前时间：" + nowMM + "月" + nowD + "日 " + (nowH < 10 ? '0' : '') + nowH + ":" + (nowM < 10 ? '0' : '') + nowM + ":" + (nowS < 10 ? '0' : '') + nowS;
+        document.getElementById("if-time").innerHTML = "当前不在投票时间！";
+        if ((nowMM == 7 && nowD >= 27) || (nowMM == 8 && nowD <= 5)) {
+            if ((nowH >= 7 && nowH < 11) || (nowH == 11 && nowM <= 10)) {
+                document.getElementById("if-time").innerHTML = "当前可以投票！";
+            }
+        }
+        setTimeout("showtime()", 1000);
+    }
+    </script>
+</head>
+
+<body>
+    <div>
+        <div>
+            
+            <h1>2017齐鲁最美教师60强晋级30强评选</h1>
+            <div class="nav-wrapper">
+                <h4><a class="nav prev" href="http://phdwu.com/vote/">首页</a><a class="nav prev" href="http://phdwu.com/vote/history">200强名单</a><a class="nav next" href="http://phdwu.com/vote/vote.html">投票</a></h4>
+            </div>
+            <h3 id="time"><script type="text/javascript">showtime();</script></h3>
+            <h3 id="if-time"><script type="text/javascript">showtime();</script></h3>
+            <div class="container">
+                <div class="first">
+                    <h2>【投票方法】</h2>
+                </div>
+                <div class="col-sm-12">
+                    <span class="qy-content2">
+                            <ul>
+                                <li>
+                                    7月27日至8月5日每天7:00-11:10在观看山东教育电视台节目期间，打开微信摇一摇→摇电视按钮，对着电视屏幕摇动手机，等手机识别到节目音频后，就会跳转出微信入口图，点击即可进入投票页面。
+                                </li>
+                                <li>
+                                    注：可使用手机对着电视/电脑/另一台手机摇一摇。每人每天可投一票。
+                                </li>
+                                <li>
+                                    <a href="weixin://">点此打开微信</a>
+                                </li>
+                            </ul>
+                        </span>
+                </div>
+            </div>
+            <div class="container">
+                <div class="first">
+                    <h2>
+                            【山东教育电视台链接】
+                        </h2>
+                </div>
+                <div class="col-sm-12">
+                    <span class="qy-content2">
+                            <ul>
+                                <li>
+                                    <a href="http://www.sdetv.com.cn/pages/direct-seeding.html">山东教育电视台官网直播【推荐】</a>
+                                </li>
+                                <li>
+                                    <a href="http://houtai.sdetv.com.cn/front/base/live/livefront/liveinteractionindex?id=1&token=shandongjiaoyu">山东教育电视台微信直播【必须通过微信访问，或通过微信号菜单进入】</a>
+                                </li><li>
+                                    <a href="http://tv.cntv.cn/live/sdetv/">央视网直播【可能需要安装插件】</a>
+                                </li>
+                                <li>
+                                    <a href="http://www.haoqu.net/3/shandong/sdetv.html">好趣网在线直播【推荐】</a>
+                                </li>
+                                <li>
+                                    <a href="https://live.wasu.cn/show/id/1934562">华数TV在线直播</a>
+                                </li>
+                                <li>
+                                    <a href="https://tv.byr.cn/desktop/player.html?channel=sdetv">北邮IPTV直播【仅支持IPv6访问】</a>
+                                </li>
+                                <li>
+                                    <a href="http://v.pptv.com/show/eRhicicWXLO3ncWsI.html">PPTV直播</a>
+                                </li>
+                            </ul>
+                        </span>
+                </div>
+            </div>
+        </div>
+        <h5><img src="http://pic.kuaizhan.com/g2/M01/9C/08/CgpQVFc70ZGATq57AAGkowoaTnc6419635/imageView/v1/thumbnail/640x0" width="150px"><img src="http://pic.kuaizhan.com/g1/M00/9B/AD/wKjmqVc70hSAZrJRAAFNeAgQ8yk5702136" width="150px"></h5>
+        <h5><u>机制实验室版权所有&copy;2017</u></h5> 
+
+    </div>
+    </div>
+</body>
+
+</html>
