@@ -192,7 +192,7 @@ div {
         document.getElementById("if-time").innerHTML = "当前不在投票时间！";
         if ((nowMM == 7 && nowD >= 27) || (nowMM == 8 && nowD <= 5)) {
             if ((nowH >= 7 && nowH < 11) || (nowH == 11 && nowM <= 10)) {
-                document.getElementById("if-time").innerHTML = "当前可以投票！";
+                document.getElementById("if-time").innerHTML = "当前可以投"+nowMM+"月"+nowD+ "日票！";
             }
         }
         setTimeout("showtime()", 1000);
@@ -231,6 +231,10 @@ div {
             
         
             
+            <th class="Number orderable"><a href="?sort=Number">Num</a></th>
+            
+        
+            
             <th class="edit orderable"><a href="?sort=edit">姓名</a></th>
             
         
@@ -258,13 +262,15 @@ div {
             
                 <td class="No">1</td>
             
+                <td class="Number">2376</td>
+            
                 <td class="edit"><a title="点击查看[霍玉红]的历史票数变化曲线" href="http://172.18.204.163/chart/?id=1">霍玉红</a></td>
             
                 <td class="Address">临清市潘庄镇中心小学</td>
             
                 <td class="Category">7.27</td>
             
-                <td class="Vote">666</td>
+                <td class="Vote">715</td>
             
         </tr>
         
@@ -274,13 +280,15 @@ div {
             
                 <td class="No">2</td>
             
+                <td class="Number">2239</td>
+            
                 <td class="edit"><a title="点击查看[崔佃金]的历史票数变化曲线" href="http://172.18.204.163/chart/?id=2">崔佃金</a></td>
             
                 <td class="Address">山东省桓台第一中学</td>
             
                 <td class="Category">7.27</td>
             
-                <td class="Vote">561</td>
+                <td class="Vote">620</td>
             
         </tr>
         
@@ -289,6 +297,8 @@ div {
         <tr class="even">
             
                 <td class="No">3</td>
+            
+                <td class="Number">2364</td>
             
                 <td class="edit"><a title="点击查看[杜国磊]的历史票数变化曲线" href="http://172.18.204.163/chart/?id=3">杜国磊</a></td>
             
@@ -306,7 +316,27 @@ div {
             
                 <td class="No">4</td>
             
-                <td class="edit"><a title="点击查看[刘元静]的历史票数变化曲线" href="http://172.18.204.163/chart/?id=4">刘元静</a></td>
+                <td class="Number">2014</td>
+            
+                <td class="edit"><a title="点击查看[崔波]的历史票数变化曲线" href="http://172.18.204.163/chart/?id=4">崔波</a></td>
+            
+                <td class="Address">齐鲁工业大学</td>
+            
+                <td class="Category">7.27</td>
+            
+                <td class="Vote">17</td>
+            
+        </tr>
+        
+         
+        
+        <tr class="even">
+            
+                <td class="No">5</td>
+            
+                <td class="Number">2122</td>
+            
+                <td class="edit"><a title="点击查看[刘元静]的历史票数变化曲线" href="http://172.18.204.163/chart/?id=5">刘元静</a></td>
             
                 <td class="Address">山东省青岛第二中学</td>
             
@@ -318,25 +348,11 @@ div {
         
          
         
-        <tr class="even">
-            
-                <td class="No">5</td>
-            
-                <td class="edit"><a title="点击查看[崔波]的历史票数变化曲线" href="http://172.18.204.163/chart/?id=5">崔波</a></td>
-            
-                <td class="Address">齐鲁工业大学</td>
-            
-                <td class="Category">7.27</td>
-            
-                <td class="Vote">14</td>
-            
-        </tr>
-        
-         
-        
         <tr class="odd">
             
                 <td class="No">6</td>
+            
+                <td class="Number">2143</td>
             
                 <td class="edit"><a title="点击查看[臧仲青]的历史票数变化曲线" href="http://172.18.204.163/chart/?id=6">臧仲青</a></td>
             
@@ -344,7 +360,7 @@ div {
             
                 <td class="Category">7.27</td>
             
-                <td class="Vote">10</td>
+                <td class="Vote">13</td>
             
         </tr>
         
@@ -353,6 +369,8 @@ div {
         <tr class="even">
             
                 <td class="No">8</td>
+            
+                <td class="Number">2026</td>
             
                 <td class="edit"><a title="点击查看[黄传真]的历史票数变化曲线" href="http://172.18.204.163/chart/?id=8">黄传真</a></td>
             
@@ -369,6 +387,8 @@ div {
         <tr class="odd">
             
                 <td class="No">9</td>
+            
+                <td class="Number">2027</td>
             
                 <td class="edit"><a title="点击查看[解从霞]的历史票数变化曲线" href="http://172.18.204.163/chart/?id=9">解从霞</a></td>
             
@@ -387,6 +407,8 @@ div {
             
                 <td class="No">10</td>
             
+                <td class="Number">2037</td>
+            
                 <td class="edit"><a title="点击查看[程卫民]的历史票数变化曲线" href="http://172.18.204.163/chart/?id=10">程卫民</a></td>
             
                 <td class="Address">山东科技大学
@@ -404,6 +426,8 @@ div {
             
                 <td class="No">11</td>
             
+                <td class="Number">2043</td>
+            
                 <td class="edit"><a title="点击查看[魏建]的历史票数变化曲线" href="http://172.18.204.163/chart/?id=11">魏建</a></td>
             
                 <td class="Address">山东师范大学</td>
@@ -419,6 +443,8 @@ div {
         <tr class="even">
             
                 <td class="No">12</td>
+            
+                <td class="Number">2047</td>
             
                 <td class="edit"><a title="点击查看[刘更生]的历史票数变化曲线" href="http://172.18.204.163/chart/?id=12">刘更生</a></td>
             
@@ -436,6 +462,8 @@ div {
             
                 <td class="No">13</td>
             
+                <td class="Number">2057</td>
+            
                 <td class="edit"><a title="点击查看[刘永红]的历史票数变化曲线" href="http://172.18.204.163/chart/?id=13">刘永红</a></td>
             
                 <td class="Address">中国石油大学（华东）</td>
@@ -452,12 +480,13 @@ div {
             
                 <td class="No">14</td>
             
+                <td class="Number">2075</td>
+            
                 <td class="edit"><a title="点击查看[张薇]的历史票数变化曲线" href="http://172.18.204.163/chart/?id=14">张薇</a></td>
             
-                <td class="Address">青岛职业技术学院  
-</td>
+                <td class="Address">青岛职业技术学院</td>
             
-                <td class="Category">7.29</td>
+                <td class="Category">8.2</td>
             
                 <td class="Vote">0</td>
             
@@ -469,12 +498,13 @@ div {
             
                 <td class="No">15</td>
             
+                <td class="Number">2088</td>
+            
                 <td class="edit"><a title="点击查看[陈静]的历史票数变化曲线" href="http://172.18.204.163/chart/?id=15">陈静</a></td>
             
-                <td class="Address">山东劳动职业技术学院
-</td>
+                <td class="Address">山东劳动职业技术学院</td>
             
-                <td class="Category">7.29</td>
+                <td class="Category">8.3</td>
             
                 <td class="Vote">0</td>
             
@@ -486,12 +516,13 @@ div {
             
                 <td class="No">16</td>
             
+                <td class="Number">2124</td>
+            
                 <td class="edit"><a title="点击查看[宋瑞兰]的历史票数变化曲线" href="http://172.18.204.163/chart/?id=16">宋瑞兰</a></td>
             
-                <td class="Address">山东省青岛第五十八中学
-</td>
+                <td class="Address">山东省青岛第五十八中学</td>
             
-                <td class="Category">7.29</td>
+                <td class="Category">8.2</td>
             
                 <td class="Vote">0</td>
             
@@ -502,6 +533,8 @@ div {
         <tr class="odd">
             
                 <td class="No">17</td>
+            
+                <td class="Number">2128</td>
             
                 <td class="edit"><a title="点击查看[薛志军]的历史票数变化曲线" href="http://172.18.204.163/chart/?id=17">薛志军</a></td>
             
@@ -519,6 +552,8 @@ div {
             
                 <td class="No">18</td>
             
+                <td class="Number">2145</td>
+            
                 <td class="edit"><a title="点击查看[郭守法]的历史票数变化曲线" href="http://172.18.204.163/chart/?id=18">郭守法</a></td>
             
                 <td class="Address">费县朱田镇中心小学</td>
@@ -534,6 +569,8 @@ div {
         <tr class="odd">
             
                 <td class="No">19</td>
+            
+                <td class="Number">2148</td>
             
                 <td class="edit"><a title="点击查看[公茂双]的历史票数变化曲线" href="http://172.18.204.163/chart/?id=19">公茂双</a></td>
             
@@ -551,6 +588,8 @@ div {
             
                 <td class="No">20</td>
             
+                <td class="Number">2193</td>
+            
                 <td class="edit"><a title="点击查看[高黎]的历史票数变化曲线" href="http://172.18.204.163/chart/?id=20">高黎</a></td>
             
                 <td class="Address">高密市第一实验小学</td>
@@ -566,6 +605,8 @@ div {
         <tr class="odd">
             
                 <td class="No">21</td>
+            
+                <td class="Number">2206</td>
             
                 <td class="edit"><a title="点击查看[张兴芬]的历史票数变化曲线" href="http://172.18.204.163/chart/?id=21">张兴芬</a></td>
             
@@ -584,6 +625,8 @@ div {
             
                 <td class="No">22</td>
             
+                <td class="Number">2211</td>
+            
                 <td class="edit"><a title="点击查看[毛晓青]的历史票数变化曲线" href="http://172.18.204.163/chart/?id=22">毛晓青</a></td>
             
                 <td class="Address">山东省潍坊商业学校</td>
@@ -599,6 +642,8 @@ div {
         <tr class="odd">
             
                 <td class="No">23</td>
+            
+                <td class="Number">2252</td>
             
                 <td class="edit"><a title="点击查看[刘可翔]的历史票数变化曲线" href="http://172.18.204.163/chart/?id=23">刘可翔</a></td>
             
@@ -616,6 +661,8 @@ div {
             
                 <td class="No">24</td>
             
+                <td class="Number">2255</td>
+            
                 <td class="edit"><a title="点击查看[王书奇]的历史票数变化曲线" href="http://172.18.204.163/chart/?id=24">王书奇</a></td>
             
                 <td class="Address">沂源县河湖中学</td>
@@ -631,6 +678,8 @@ div {
         <tr class="odd">
             
                 <td class="No">25</td>
+            
+                <td class="Number">2258</td>
             
                 <td class="edit"><a title="点击查看[翟 萍]的历史票数变化曲线" href="http://172.18.204.163/chart/?id=25">翟 萍</a></td>
             
@@ -649,6 +698,8 @@ div {
             
                 <td class="No">26</td>
             
+                <td class="Number">2294</td>
+            
                 <td class="edit"><a title="点击查看[梁金君]的历史票数变化曲线" href="http://172.18.204.163/chart/?id=26">梁金君</a></td>
             
                 <td class="Address">蓬莱市第二实验小学</td>
@@ -664,6 +715,8 @@ div {
         <tr class="odd">
             
                 <td class="No">27</td>
+            
+                <td class="Number">2311</td>
             
                 <td class="edit"><a title="点击查看[蒋雪珍]的历史票数变化曲线" href="http://172.18.204.163/chart/?id=27">蒋雪珍</a></td>
             
@@ -681,6 +734,8 @@ div {
             
                 <td class="No">28</td>
             
+                <td class="Number">2342</td>
+            
                 <td class="edit"><a title="点击查看[曹炳友]的历史票数变化曲线" href="http://172.18.204.163/chart/?id=28">曹炳友</a></td>
             
                 <td class="Address">山东省泰安第二中学</td>
@@ -696,6 +751,8 @@ div {
         <tr class="odd">
             
                 <td class="No">29</td>
+            
+                <td class="Number">2344</td>
             
                 <td class="edit"><a title="点击查看[刘桂英]的历史票数变化曲线" href="http://172.18.204.163/chart/?id=29">刘桂英</a></td>
             
@@ -714,6 +771,8 @@ div {
             
                 <td class="No">30</td>
             
+                <td class="Number">2351</td>
+            
                 <td class="edit"><a title="点击查看[卜庆振]的历史票数变化曲线" href="http://172.18.204.163/chart/?id=30">卜庆振</a></td>
             
                 <td class="Address">东平县东平街道中学</td>
@@ -729,6 +788,8 @@ div {
         <tr class="odd">
             
                 <td class="No">31</td>
+            
+                <td class="Number">2355</td>
             
                 <td class="edit"><a title="点击查看[刘桂荣]的历史票数变化曲线" href="http://172.18.204.163/chart/?id=31">刘桂荣</a></td>
             
@@ -746,6 +807,8 @@ div {
             
                 <td class="No">32</td>
             
+                <td class="Number">2379</td>
+            
                 <td class="edit"><a title="点击查看[赵会娜]的历史票数变化曲线" href="http://172.18.204.163/chart/?id=32">赵会娜</a></td>
             
                 <td class="Address">冠县特殊教育学校</td>
@@ -762,12 +825,13 @@ div {
             
                 <td class="No">33</td>
             
+                <td class="Number">2384</td>
+            
                 <td class="edit"><a title="点击查看[林俊美]的历史票数变化曲线" href="http://172.18.204.163/chart/?id=33">林俊美</a></td>
             
-                <td class="Address">高唐县姜店中学
-</td>
+                <td class="Address">高唐县姜店中学</td>
             
-                <td class="Category">7.29</td>
+                <td class="Category">8.3</td>
             
                 <td class="Vote">0</td>
             
@@ -778,6 +842,8 @@ div {
         <tr class="even">
             
                 <td class="No">34</td>
+            
+                <td class="Number">2415</td>
             
                 <td class="edit"><a title="点击查看[田瑜钦]的历史票数变化曲线" href="http://172.18.204.163/chart/?id=34">田瑜钦</a></td>
             
@@ -795,12 +861,13 @@ div {
             
                 <td class="No">35</td>
             
+                <td class="Number">2421</td>
+            
                 <td class="edit"><a title="点击查看[王勇进]的历史票数变化曲线" href="http://172.18.204.163/chart/?id=35">王勇进</a></td>
             
-                <td class="Address">济南第六职业中等专业学校
-</td>
+                <td class="Address">济南第六职业中等专业学校</td>
             
-                <td class="Category">7.29</td>
+                <td class="Category">8.2</td>
             
                 <td class="Vote">0</td>
             
@@ -811,6 +878,8 @@ div {
         <tr class="even">
             
                 <td class="No">36</td>
+            
+                <td class="Number">2428</td>
             
                 <td class="edit"><a title="点击查看[李堯]的历史票数变化曲线" href="http://172.18.204.163/chart/?id=36">李堯</a></td>
             
@@ -827,6 +896,8 @@ div {
         <tr class="odd">
             
                 <td class="No">37</td>
+            
+                <td class="Number">2440</td>
             
                 <td class="edit"><a title="点击查看[贾翠珍]的历史票数变化曲线" href="http://172.18.204.163/chart/?id=37">贾翠珍</a></td>
             
@@ -845,6 +916,8 @@ div {
             
                 <td class="No">38</td>
             
+                <td class="Number">2446</td>
+            
                 <td class="edit"><a title="点击查看[孟凡芹]的历史票数变化曲线" href="http://172.18.204.163/chart/?id=38">孟凡芹</a></td>
             
                 <td class="Address">枣庄市薛城区陶庄镇东种庄小学</td>
@@ -860,6 +933,8 @@ div {
         <tr class="odd">
             
                 <td class="No">39</td>
+            
+                <td class="Number">2462</td>
             
                 <td class="edit"><a title="点击查看[陈登民]的历史票数变化曲线" href="http://172.18.204.163/chart/?id=39">陈登民</a></td>
             
@@ -877,6 +952,8 @@ div {
             
                 <td class="No">40</td>
             
+                <td class="Number">2525</td>
+            
                 <td class="edit"><a title="点击查看[蔺胜娟]的历史票数变化曲线" href="http://172.18.204.163/chart/?id=40">蔺胜娟</a></td>
             
                 <td class="Address">日照市山海天旅游度假区青岛路中学</td>
@@ -893,12 +970,13 @@ div {
             
                 <td class="No">41</td>
             
+                <td class="Number">2533</td>
+            
                 <td class="edit"><a title="点击查看[庞有青]的历史票数变化曲线" href="http://172.18.204.163/chart/?id=41">庞有青</a></td>
             
-                <td class="Address">邹城市北宿中学
-</td>
+                <td class="Address">邹城市北宿中学</td>
             
-                <td class="Category">7.29</td>
+                <td class="Category">8.2</td>
             
                 <td class="Vote">0</td>
             
@@ -910,12 +988,13 @@ div {
             
                 <td class="No">42</td>
             
+                <td class="Number">2542</td>
+            
                 <td class="edit"><a title="点击查看[王瑞霞]的历史票数变化曲线" href="http://172.18.204.163/chart/?id=42">王瑞霞</a></td>
             
-                <td class="Address">高密市姚哥庄小学
-</td>
+                <td class="Address">高密市姚哥庄小学</td>
             
-                <td class="Category">7.29</td>
+                <td class="Category">8.2</td>
             
                 <td class="Vote">0</td>
             
@@ -927,12 +1006,13 @@ div {
             
                 <td class="No">43</td>
             
+                <td class="Number">2546</td>
+            
                 <td class="edit"><a title="点击查看[吕兵文]的历史票数变化曲线" href="http://172.18.204.163/chart/?id=43">吕兵文</a></td>
             
-                <td class="Address">威海市文登区葛家中学
-</td>
+                <td class="Address">威海市文登区葛家中学</td>
             
-                <td class="Category">7.29</td>
+                <td class="Category">8.2</td>
             
                 <td class="Vote">0</td>
             
@@ -944,12 +1024,13 @@ div {
             
                 <td class="No">44</td>
             
+                <td class="Number">2556</td>
+            
                 <td class="edit"><a title="点击查看[高惠燕]的历史票数变化曲线" href="http://172.18.204.163/chart/?id=44">高惠燕</a></td>
             
-                <td class="Address">山东省实验中学
-</td>
+                <td class="Address">山东省实验中学</td>
             
-                <td class="Category">7.29</td>
+                <td class="Category">8.4</td>
             
                 <td class="Vote">0</td>
             
@@ -961,12 +1042,13 @@ div {
             
                 <td class="No">45</td>
             
+                <td class="Number">2558</td>
+            
                 <td class="edit"><a title="点击查看[禚基娥]的历史票数变化曲线" href="http://172.18.204.163/chart/?id=45">禚基娥</a></td>
             
-                <td class="Address">济南特殊教育中心
-</td>
+                <td class="Address">济南特殊教育中心</td>
             
-                <td class="Category">7.29</td>
+                <td class="Category">8.3</td>
             
                 <td class="Vote">0</td>
             
@@ -977,6 +1059,8 @@ div {
         <tr class="even">
             
                 <td class="No">46</td>
+            
+                <td class="Number">2563</td>
             
                 <td class="edit"><a title="点击查看[王红云]的历史票数变化曲线" href="http://172.18.204.163/chart/?id=46">王红云</a></td>
             
@@ -994,12 +1078,13 @@ div {
             
                 <td class="No">47</td>
             
+                <td class="Number">2566</td>
+            
                 <td class="edit"><a title="点击查看[孙秀侠]的历史票数变化曲线" href="http://172.18.204.163/chart/?id=47">孙秀侠</a></td>
             
-                <td class="Address">微山县第二实验小学  
-</td>
+                <td class="Address">微山县第二实验小学</td>
             
-                <td class="Category">7.29</td>
+                <td class="Category">8.3</td>
             
                 <td class="Vote">0</td>
             
@@ -1011,12 +1096,13 @@ div {
             
                 <td class="No">48</td>
             
+                <td class="Number">2581</td>
+            
                 <td class="edit"><a title="点击查看[刘晓玲]的历史票数变化曲线" href="http://172.18.204.163/chart/?id=48">刘晓玲</a></td>
             
-                <td class="Address">青岛市崂山二中
-</td>
+                <td class="Address">青岛市崂山二中</td>
             
-                <td class="Category">7.29</td>
+                <td class="Category">8.3</td>
             
                 <td class="Vote">0</td>
             
@@ -1027,6 +1113,8 @@ div {
         <tr class="odd">
             
                 <td class="No">49</td>
+            
+                <td class="Number">2589</td>
             
                 <td class="edit"><a title="点击查看[周祥香]的历史票数变化曲线" href="http://172.18.204.163/chart/?id=49">周祥香</a></td>
             
@@ -1044,12 +1132,13 @@ div {
             
                 <td class="No">50</td>
             
+                <td class="Number">2590</td>
+            
                 <td class="edit"><a title="点击查看[高曰荣]的历史票数变化曲线" href="http://172.18.204.163/chart/?id=50">高曰荣</a></td>
             
-                <td class="Address">山东省五莲县第一中学
-</td>
+                <td class="Address">山东省五莲县第一中学</td>
             
-                <td class="Category">7.29</td>
+                <td class="Category">8.4</td>
             
                 <td class="Vote">0</td>
             
@@ -1061,12 +1150,13 @@ div {
             
                 <td class="No">51</td>
             
+                <td class="Number">2599</td>
+            
                 <td class="edit"><a title="点击查看[吕春霞]的历史票数变化曲线" href="http://172.18.204.163/chart/?id=51">吕春霞</a></td>
             
-                <td class="Address">菏泽市牡丹区第21初级中学
-</td>
+                <td class="Address">菏泽市牡丹区第21初级中学</td>
             
-                <td class="Category">7.29</td>
+                <td class="Category">8.5</td>
             
                 <td class="Vote">0</td>
             
@@ -1078,12 +1168,13 @@ div {
             
                 <td class="No">52</td>
             
+                <td class="Number">2608</td>
+            
                 <td class="edit"><a title="点击查看[邱兰英]的历史票数变化曲线" href="http://172.18.204.163/chart/?id=52">邱兰英</a></td>
             
-                <td class="Address">山东省平原师范学校
-</td>
+                <td class="Address">山东省平原师范学校</td>
             
-                <td class="Category">7.29</td>
+                <td class="Category">8.5</td>
             
                 <td class="Vote">0</td>
             
@@ -1095,12 +1186,13 @@ div {
             
                 <td class="No">53</td>
             
+                <td class="Number">2631</td>
+            
                 <td class="edit"><a title="点击查看[薛跃娥]的历史票数变化曲线" href="http://172.18.204.163/chart/?id=53">薛跃娥</a></td>
             
-                <td class="Address">青岛市黄岛区嘉陵江路第一小学
-</td>
+                <td class="Address">青岛市黄岛区嘉陵江路第一小学</td>
             
-                <td class="Category">7.29</td>
+                <td class="Category">8.4</td>
             
                 <td class="Vote">0</td>
             
@@ -1112,12 +1204,13 @@ div {
             
                 <td class="No">54</td>
             
+                <td class="Number">2636</td>
+            
                 <td class="edit"><a title="点击查看[刘乃志]的历史票数变化曲线" href="http://172.18.204.163/chart/?id=54">刘乃志</a></td>
             
-                <td class="Address">胶州市第八中学
-</td>
+                <td class="Address">胶州市第八中学</td>
             
-                <td class="Category">7.29</td>
+                <td class="Category">8.5</td>
             
                 <td class="Vote">0</td>
             
@@ -1129,12 +1222,13 @@ div {
             
                 <td class="No">55</td>
             
+                <td class="Number">2642</td>
+            
                 <td class="edit"><a title="点击查看[邢梅萍]的历史票数变化曲线" href="http://172.18.204.163/chart/?id=55">邢梅萍</a></td>
             
-                <td class="Address">聊城大学
-</td>
+                <td class="Address">聊城大学</td>
             
-                <td class="Category">7.29</td>
+                <td class="Category">8.4</td>
             
                 <td class="Vote">0</td>
             
@@ -1146,12 +1240,13 @@ div {
             
                 <td class="No">56</td>
             
+                <td class="Number">2644</td>
+            
                 <td class="edit"><a title="点击查看[宋作爱]的历史票数变化曲线" href="http://172.18.204.163/chart/?id=56">宋作爱</a></td>
             
-                <td class="Address">临朐县九山镇宋王庄小学
-</td>
+                <td class="Address">临朐县九山镇宋王庄小学</td>
             
-                <td class="Category">7.29</td>
+                <td class="Category">8.4</td>
             
                 <td class="Vote">0</td>
             
@@ -1163,12 +1258,13 @@ div {
             
                 <td class="No">57</td>
             
+                <td class="Number">2654</td>
+            
                 <td class="edit"><a title="点击查看[丛海林]的历史票数变化曲线" href="http://172.18.204.163/chart/?id=57">丛海林</a></td>
             
-                <td class="Address">青岛大学
-</td>
+                <td class="Address">青岛大学</td>
             
-                <td class="Category">7.29</td>
+                <td class="Category">8.4</td>
             
                 <td class="Vote">0</td>
             
@@ -1180,12 +1276,13 @@ div {
             
                 <td class="No">58</td>
             
+                <td class="Number">2665</td>
+            
                 <td class="edit"><a title="点击查看[范蕊]的历史票数变化曲线" href="http://172.18.204.163/chart/?id=58">范蕊</a></td>
             
-                <td class="Address">山东大学（威海）
-</td>
+                <td class="Address">山东大学（威海）</td>
             
-                <td class="Category">7.29</td>
+                <td class="Category">8.5</td>
             
                 <td class="Vote">0</td>
             
@@ -1197,12 +1294,13 @@ div {
             
                 <td class="No">59</td>
             
+                <td class="Number">2670</td>
+            
                 <td class="edit"><a title="点击查看[王艳君]的历史票数变化曲线" href="http://172.18.204.163/chart/?id=59">王艳君</a></td>
             
-                <td class="Address">淄博市实验幼儿园 
-</td>
+                <td class="Address">淄博市实验幼儿园</td>
             
-                <td class="Category">7.29</td>
+                <td class="Category">8.3</td>
             
                 <td class="Vote">0</td>
             
@@ -1214,12 +1312,13 @@ div {
             
                 <td class="No">60</td>
             
+                <td class="Number">2686</td>
+            
                 <td class="edit"><a title="点击查看[薄其玉]的历史票数变化曲线" href="http://172.18.204.163/chart/?id=60">薄其玉</a></td>
             
-                <td class="Address">东营经济技术开发区东凯小学
-</td>
+                <td class="Address">东营经济技术开发区东凯小学</td>
             
-                <td class="Category">7.29</td>
+                <td class="Category">8.5</td>
             
                 <td class="Vote">0</td>
             
@@ -1231,12 +1330,13 @@ div {
             
                 <td class="No">0</td>
             
+                <td class="Number">2693</td>
+            
                 <td class="edit"><a title="点击查看[赵庆志]的历史票数变化曲线" href="http://172.18.204.163/chart/?id=0">赵庆志</a></td>
             
-                <td class="Address">山东理工大学
-</td>
+                <td class="Address">山东理工大学</td>
             
-                <td class="Category">7.29</td>
+                <td class="Category">8.5</td>
             
                 <td class="Vote">0</td>
             
@@ -1270,7 +1370,7 @@ div {
 
         </div>
         <div>
-            <h5>页面刷新时间2017-07-27 10:10:11</h5>
+            <h5>页面刷新时间2017-07-27 10:21:08</h5>
         </div>
     </div>
 </body>
