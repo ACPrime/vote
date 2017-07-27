@@ -189,9 +189,9 @@ div {
         var nowS = myDate.getSeconds();
 
         document.getElementById("time").innerHTML = "当前时间：" + nowMM + "月" + nowD + "日 " + (nowH < 10 ? '0' : '') + nowH + ":" + (nowM < 10 ? '0' : '') + nowM + ":" + (nowS < 10 ? '0' : '') + nowS;
-        document.getElementById("if-time").innerHTML = "当前不在投票时间！";
+        document.getElementById("if-time").innerHTML = "7月27日投票已结束，请等待7月28日投票";
         if ((nowMM == 7 && nowD >= 27) || (nowMM == 8 && nowD <= 5)) {
-            if ((nowH >= 7 && nowH < 11) || (nowH == 11 && nowM <= 10)) {
+            if ((nowH >= 7 && nowH < 11) || (nowH == 11 && nowM <= 9)) {
                 document.getElementById("if-time").innerHTML = "当前可以投"+nowMM+"月"+nowD+ "日票！";
             }
         }
@@ -1370,7 +1370,7 @@ div {
 
         </div>
         <div>
-            <h5>页面刷新时间2017-07-27 11:10:09</h5>
+            <h5>页面刷新时间2017-07-27 11:12:47</h5>
         </div>
     </div>
 </body>
