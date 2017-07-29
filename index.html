@@ -7,7 +7,6 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta http-equiv="Access-Control-Allow-Origin" content="http://phdwu.com" />
     <title>2017齐鲁最美教师60强晋级30强评选</title>
     <!-- Bootstrap -->
     <link href="http://apps.bdimg.com/libs/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
@@ -268,7 +267,7 @@ div {
             <h5 id="qr"></h5>
             <h3 id="time"><script type="text/javascript">showtime();</script></h3>
             <h3 id="if-time"><script type="text/javascript">showtime();</script></h3>
-            <h5 id="cat"></h5>
+            <h5 id="cat"><font color="grey">当前处于公网，无法查看票数变化曲线</font></h5>
             <h5><u>机制实验室版权所有&copy;2017</u></h5> 
         </div>
         <div class="table-container">
@@ -1427,7 +1426,7 @@ div {
 
         </div>
         <div>
-            <h5>页面刷新时间2017-07-29 10:20:02</h5>
+            <h5>页面刷新时间2017-07-29 10:29:26</h5>
         </div>
     </div>
     <script type="text/javascript">
@@ -1440,10 +1439,6 @@ div {
                 success:function(){
                     //说明请求的url存在，并且可以访问
                     document.getElementById("cat").innerHTML = "<font color='green'>当前处于内网，点击姓名可以查看票数变化曲线</font>";
-                 },
-                error:function(){
-                    //说明请求的url存在，并且可以访问
-                    document.getElementById("cat").innerHTML = "<font color='grey'>当前处于公网，无法查看票数变化曲线</font>";
                  }
             });
         }
