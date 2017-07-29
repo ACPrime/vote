@@ -99,21 +99,10 @@ div {
         }
     }
 
-    h1 {
+    h1, h3, h5, h6 {
         text-align: center;
     }
 
-    h3 {
-        text-align: center;
-    }
-
-    h5 {
-        text-align: center;
-    }
-
-    h6 {
-        text-align: center;
-    }
     .button {
             display: inline-block;
             outline: none;
@@ -162,23 +151,21 @@ div {
     </style>
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.0.min.js"></script>
     <script type="text/javascript">
-    var flag = false;
-
-    function setReload() {
-        window.location.reload();
-        flag = false;
-    }
-
     function showtime() {
         var myDate = new Date();
+        var nextDate = new Date("2017-07-30 07:00");
+        var diffDate = (nextDate - myDate);
         var nowMM = myDate.getMonth() + 1;
         var nowD = myDate.getDate();
         var nowH = myDate.getHours();
         var nowM = myDate.getMinutes();
         var nowS = myDate.getSeconds();
 
+        var diffH = Math.floor(diffDate/3600000);
+        var diffM = Math.floor(diffDate/60000)%60;
+        var diffS = Math.floor(diffDate/1000)%60;
         document.getElementById("time").innerHTML = "当前时间：" + nowMM + "月" + nowD + "日 " + (nowH < 10 ? '0' : '') + nowH + ":" + (nowM < 10 ? '0' : '') + nowM + ":" + (nowS < 10 ? '0' : '') + nowS;
-        document.getElementById("if-time").innerHTML = "7月30日投票即将开始。时间：07:00-11:10";
+        document.getElementById("if-time").innerHTML = "距离7月30日7时投票开始还有"+diffH+"时"+diffM+"分"+diffS+"秒";
         if ((nowMM == 7 && nowD >= 27) || (nowMM == 8 && nowD <= 5)) {
             if ((nowH >= 7 && nowH < 11) || (nowH == 11 && nowM <= 9)) {
                 document.getElementById("if-time").innerHTML = "当前可以投"+nowMM+"月"+nowD+ "日票！";
@@ -1426,7 +1413,7 @@ div {
 
         </div>
         <div>
-            <h5>页面刷新时间2017-07-29 11:39:43</h5>
+            <h5>页面刷新时间2017-07-29 16:06:03</h5>
         </div>
     </div>
     <script type="text/javascript">
