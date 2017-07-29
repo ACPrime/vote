@@ -336,24 +336,6 @@ div {
             
                 <td class="no">2</td>
             
-                <td class="Number">2193</td>
-            
-                <td class="edit"><a title="点击查看[高黎]的历史票数变化曲线" href="http://172.18.204.163/chart/?id=7.28">高黎</a></td>
-            
-                <td class="Address">高密市第一实验小学</td>
-            
-                <td class="Category">7.28</td>
-            
-                <td class="Vote">2416</td>
-            
-        </tr>
-        
-         
-        
-        <tr class="even">
-            
-                <td class="no">3</td>
-            
                 <td class="Number">2027</td>
             
                 <td class="edit"><a title="点击查看[解从霞]的历史票数变化曲线" href="http://172.18.204.163/chart/?id=7.29">解从霞</a></td>
@@ -363,7 +345,25 @@ div {
             
                 <td class="Category">7.29</td>
             
-                <td class="Vote">2346</td>
+                <td class="Vote">2425</td>
+            
+        </tr>
+        
+         
+        
+        <tr class="even">
+            
+                <td class="no">3</td>
+            
+                <td class="Number">2193</td>
+            
+                <td class="edit"><a title="点击查看[高黎]的历史票数变化曲线" href="http://172.18.204.163/chart/?id=7.28">高黎</a></td>
+            
+                <td class="Address">高密市第一实验小学</td>
+            
+                <td class="Category">7.28</td>
+            
+                <td class="Vote">2416</td>
             
         </tr>
         
@@ -382,7 +382,7 @@ div {
             
                 <td class="Category">7.29</td>
             
-                <td class="Vote">2066</td>
+                <td class="Vote">2072</td>
             
         </tr>
         
@@ -419,7 +419,7 @@ div {
             
                 <td class="Category">7.29</td>
             
-                <td class="Vote">1123</td>
+                <td class="Vote">1136</td>
             
         </tr>
         
@@ -438,7 +438,7 @@ div {
             
                 <td class="Category">7.29</td>
             
-                <td class="Vote">996</td>
+                <td class="Vote">1041</td>
             
         </tr>
         
@@ -493,7 +493,7 @@ div {
             
                 <td class="Category">7.29</td>
             
-                <td class="Vote">800</td>
+                <td class="Vote">825</td>
             
         </tr>
         
@@ -548,7 +548,7 @@ div {
             
                 <td class="Category">7.29</td>
             
-                <td class="Vote">47</td>
+                <td class="Vote">53</td>
             
         </tr>
         
@@ -1426,7 +1426,7 @@ div {
 
         </div>
         <div>
-            <h5>页面刷新时间2017-07-29 10:30:03</h5>
+            <h5>页面刷新时间2017-07-29 10:40:02</h5>
         </div>
     </div>
     <script type="text/javascript">
@@ -1439,11 +1439,22 @@ div {
                 success:function(){
                     //说明请求的url存在，并且可以访问
                     document.getElementById("cat").innerHTML = "<font color='green'>当前处于内网，点击姓名可以查看票数变化曲线</font>";
-                 }
+                 },
+                error:function(){
+                    //说明请求的url不可以访问
+                        var arr=document.getElementsByClassName("edit") 
+                        console.log(arr)
+                        for(var i=0;i <arr.length;i++){ 
+                            arr[i].setAttribute("rel",arr[i].href) 
+                            actionrr[i].removeAttribute("href") 
+                        
+                        } 
+                    } 
+                 
             });
         }
         //调用
-        IsLoad("http://172.18.204.163");
+        IsLoad("http://172.18.204.133");
     </script>
 </body>
 
