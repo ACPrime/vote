@@ -1426,7 +1426,7 @@ div {
 
         </div>
         <div>
-            <h5>页面刷新时间2017-07-29 11:00:03</h5>
+            <h5>页面刷新时间2017-07-29 11:06:38</h5>
         </div>
     </div>
     <script type="text/javascript">
@@ -1442,17 +1442,17 @@ div {
                  },
                 error:function(){
                     //说明请求的url不可以访问
-                        var arr=document.getElementsByClassName("Number") 
-                        console.log(arr)
+                        var arr=document.getElementsByClassName("edit") 
+                        
                         for(var i=0;i <arr.length;i++){ 
-                            arr[i].getAttribute("href")
+                            arr[i].innerHTML = arr[i].innerText
                         } 
                     } 
                  
             });
         }
         //调用
-        IsLoad("http://172.18.204.163/ddd.html");
+        IsLoad("http://172.18.204.163");
     </script>
 </body>
 
