@@ -345,7 +345,7 @@ div {
             
                 <td class="Category">7.29</td>
             
-                <td class="Vote">2510</td>
+                <td class="Vote">2580</td>
             
         </tr>
         
@@ -382,7 +382,7 @@ div {
             
                 <td class="Category">7.29</td>
             
-                <td class="Vote">2075</td>
+                <td class="Vote">2080</td>
             
         </tr>
         
@@ -419,7 +419,7 @@ div {
             
                 <td class="Category">7.29</td>
             
-                <td class="Vote">1170</td>
+                <td class="Vote">1209</td>
             
         </tr>
         
@@ -438,7 +438,7 @@ div {
             
                 <td class="Category">7.29</td>
             
-                <td class="Vote">1115</td>
+                <td class="Vote">1159</td>
             
         </tr>
         
@@ -457,7 +457,7 @@ div {
             
                 <td class="Category">7.29</td>
             
-                <td class="Vote">864</td>
+                <td class="Vote">894</td>
             
         </tr>
         
@@ -548,7 +548,7 @@ div {
             
                 <td class="Category">7.29</td>
             
-                <td class="Vote">61</td>
+                <td class="Vote">70</td>
             
         </tr>
         
@@ -1426,7 +1426,7 @@ div {
 
         </div>
         <div>
-            <h5>页面刷新时间2017-07-29 10:50:03</h5>
+            <h5>页面刷新时间2017-07-29 11:00:03</h5>
         </div>
     </div>
     <script type="text/javascript">
@@ -1442,11 +1442,10 @@ div {
                  },
                 error:function(){
                     //说明请求的url不可以访问
-                        var arr=document.getElementsByClassName("edit") 
-                        
+                        var arr=document.getElementsByClassName("Number") 
+                        console.log(arr)
                         for(var i=0;i <arr.length;i++){ 
-                            arr[i].setAttribute("href",arr[i].rel) 
-                        
+                            arr[i].getAttribute("href")
                         } 
                     } 
                  
