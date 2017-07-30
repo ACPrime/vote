@@ -159,4 +159,5 @@ blockquote {
     text-shadow: 0 1px white;
     overflow: auto;
     width:365px;
+    text-align: center;
 }
