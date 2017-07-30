@@ -10,147 +10,25 @@
     <title>2017齐鲁最美教师60强晋级30强评选-截止7月30日</title>
     <!-- Bootstrap -->
     <link href="http://apps.bdimg.com/libs/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
-    <style type="text/css">
-div {
-        font-size: 20px;
-        -webkit-transition: font-size 0.2s ease-out;
-    }
+    <link href="http://phdwu.com/vote/main.css" rel="stylesheet">
 
-    @media only screen and (max-width: 1200px) {
-        div {
-            font-size: 19px;
-        }
-    }
-
-    @media only screen and (max-width: 1100px) {
-        div {
-            font-size: 18px;
-        }
-    }
-
-    @media only screen and (max-width: 1000px) {
-        div {
-            font-size: 17px;
-        }
-    }
-
-    @media only screen and (max-width: 900px) {
-        div {
-            font-size: 16px;
-        }
-    }
-
-    @media only screen and (max-width: 800px) {
-        div {
-            font-size: 15px;
-        }
-    }
-
-    @media only screen and (max-width: 700px) {
-        div {
-            font-size: 14px;
-        }
-    }
-
-    @media only screen and (max-width: 600px) {
-        div {
-            font-size: 13px;
-        }
-    }
-
-    @media only screen and (max-width: 500px) {
-        div {
-            font-size: 12px;
-        }
-    }
-
-    @media only screen and (max-width: 400px) {
-        div {
-            font-size: 11px;
-        }
-    }
-
-    @media only screen and (max-width: 300px) {
-        div {
-            font-size: 10px;
-        }
-    }
-
-    body {
-        padding-top: 0px;
-    }
-
-    @media screen and (max-width: 600px) {
-        .table-container {
-            width: 100%;
-            overflow-y: auto;
-            _overflow: auto;
-            margin: 0 0 1em;
-        }
-    }
-
-    @media screen and (min-width: 600px) {
-        .table-container {
-            width: 90%;
-            overflow-y: auto;
-            _overflow: auto;
-            margin: auto;
-            float: center;
-        }
-    }
-
-    h1, h3, h5, h6 {
-        text-align: center;
-    }
-
-    .button {
-            display: inline-block;
-            outline: none;
-            cursor: pointer;
-            text-align: center;
-            text-decoration: none;
-            font: 16px/100% 'Microsoft yahei',Arial, Helvetica, sans-serif;
-            padding: .5em 2em .55em;
-            text-shadow: 0 1px 1px rgba(0,0,0,.3);
-            -webkit-border-radius: .5em; 
-            -moz-border-radius: .5em;
-            border-radius: .5em;
-            -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
-            -moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
-            box-shadow: 0 1px 2px rgba(0,0,0,.2);
-        }
-        .button:hover {
-            text-decoration: none;
-        }
-        .button:active {
-            position: relative;
-            top: 1px;
-        }
-        .blue {
-            color: #d9eef7;
-            border: solid 1px #0076a3;
-            background: #0095cd;
-            background: -webkit-gradient(linear, left top, left bottom, from(#00adee), to(#0078a5));
-            background: -moz-linear-gradient(top,  #00adee,  #0078a5);
-            filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#00adee', endColorstr='#0078a5');
-        }
-        .blue:hover {
-            background: #007ead;
-            background: -webkit-gradient(linear, left top, left bottom, from(#0095cc), to(#00678e));
-            background: -moz-linear-gradient(top,  #0095cc,  #00678e);
-            filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#0095cc', endColorstr='#00678e');
-        }
-        .blue:active {
-            color: #80bed6;
-            background: -webkit-gradient(linear, left top, left bottom, from(#0078a5), to(#00adee));
-            background: -moz-linear-gradient(top,  #0078a5,  #00adee);
-            filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#0078a5', endColorstr='#00adee');
-        }
-
-}
-    </style>
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.0.min.js"></script>
     <script type="text/javascript">
+    window.onload=function()
+    {
+        if(isWeiXin()==false){
+            var el = document.getElementById('weixin');
+            el.parentNode.removeChild(el);
+            document.getElementById("type").innerHTML="您当前使用的是" + getExploreName() + "浏览器，请依次点击下方按钮关注并投票："
+        }
+        else{
+            var el = document.getElementById('not-weixin');
+            el.parentNode.removeChild(el);
+            document.getElementById("type").innerHTML="您当前使用的是" + getExploreName() + "浏览器，请依次点击下方按钮关注并投票："
+            
+        }
+        
+    }
     function showtime() {
         var myDate = new Date();
         var nextDate = new Date("2017-07-31 07:00");
@@ -209,50 +87,37 @@ div {
       }
     }
 
-
-    var click = false;
-    function qrcode() {
-        if(click==false){
-            if(isWeiXin())
-            {
-                document.getElementById("qr").innerHTML =  "请长按识别下方微信二维码投票";
-            }
-            else {
-                document.getElementById("qr").innerHTML =  "请用手机微信扫一扫下方微信二维码投票";
-            }
-            document.getElementById("qr").innerHTML =  document.getElementById("qr").innerHTML+"<br><img src='http://phdwu.com/vote/qrcode.png'>";
-            document.getElementById("Qrcode").value =  "点击收起二维码";
-            click = true;
-        }
-        else
+    function follow(){
+        if(isWeiXin())
         {
-            document.getElementById("qr").innerHTML =  "";
-            document.getElementById("Qrcode").value =  "点此查看微信投票入口二维码";
-            click = false;
+            document.getElementById("qr").innerHTML =  "如已关注可直接点第二步";
+            document.getElementById("qr").innerHTML =  document.getElementById("qr").innerHTML+"<br><img src='http://phdwu.com/vote/sdetv.gif' width='280px'> ";
         }
-        
+        else {
+            document.getElementById("qr").innerHTML =  "请用手机微信扫一扫下方二维码关注公众号";
+            document.getElementById("qr").innerHTML =  document.getElementById("qr").innerHTML+"<br><img src='http://phdwu.com/vote/sdetv.jpg' width='180px'> ";
+        }
     }
 
-    function jump(){
-        if(isWeiXin()){
+    function vote(){
+        if(isWeiXin())
+        {
             window.location.href="http://weitac.sdetv.com.cn/pages/zmjs2017_mobile_index0725.html";
         }
-        else
-        {
-            alert("检测到当前为"+getExploreName()+"浏览器，而非微信浏览器，请复制本页地址粘贴在微信中打开，或分享本页到微信再打开，方可跳转投票！");
+        else {
+            document.getElementById("qr").innerHTML =  "请用手机微信扫一扫下方二维码进入投票页面";
+            document.getElementById("qr").innerHTML =  document.getElementById("qr").innerHTML+"<br><img src='http://phdwu.com/vote/qrcode.png' width='180px'>";
         }
     }
 
     function isWeiXin(){ 
-    var ua = window.navigator.userAgent.toLowerCase(); 
-    if(ua.match(/MicroMessenger/i) == 'micromessenger'){ 
-        return true; 
-    }else{ 
-        return false; 
+        var ua = window.navigator.userAgent.toLowerCase(); 
+        if(ua.match(/MicroMessenger/i) == 'micromessenger'){ 
+            return true; 
+        }else{ 
+            return false; 
+        }
     }
-
-    
-} 
     </script>
 </head>
 
@@ -261,15 +126,31 @@ div {
         <div>
             
             <h1>2017齐鲁最美教师60强晋级30强评选</h1>
-            <div class="nav-wrapper">
-            <h5><input type="button" name="Qrcode" id="Qrcode" value="点此查看微信投票入口二维码" onclick="qrcode()" class="button blue"/>    <input type="button" name="Submit" value="点此直接进入7月30日投票页面" onclick="jump()" class="button blue"/></h5>
-            <h5 id="qr"></h5>
+            <div style="margin:0 auto;" id="weixin">
+                <blockquote>
+                    <b>投票方法：</b><br>
+                    <p id="type"></p>
+                    <input type="button" name="Submit" value="第一步：关注" onclick="follow()" class="button blue"/>       
+                    <input type="button" name="Submit" value="第二步：投票" onclick="vote()" class="button blue"/>
+                <h5><p id = "qr"></p></h5>
+                </blockquote>
+            </div>
+            <div style="margin:0 auto;" id="not-weixin">
+                <blockquote>
+                    <b>投票方法：</b><br>
+                    <p id="type"></p>
+                    <input type="button" name="Submit" value="第一步：关注" onclick="follow()" class="button blue"/>       
+                    <input type="button" name="Submit" value="第二步：投票" onclick="vote()" class="button blue"/>
+                    <h5><p id = "qr"></p></h5>
+                您还可以直接在微信中打开本页面投票，更加方便快捷。
+                </blockquote>
+            </div>
             <h3 id="time"><script type="text/javascript">showtime();</script></h3>
             <h3 id="if-time"><script type="text/javascript">showtime();</script></h3>
             <h5 id="cat"><font color="grey">当前处于公网（流量或者校外访问），无法查看票数变化曲线</h5>
-            <h5><font color="grey">声明：本网站与“2017齐鲁最美教师”评选组委会无任何关系<h5>
+            <h5><font color="grey">本网站与“2017齐鲁最美教师”评选组委会无任何关系<h5>
             <h5>本网站数据仅供参考，不保证与最终评选结果有任何关系</font></h5>
-            <h5><u><font color="black">机制实验室版权所有&copy;2017 All Rights Reserved.</u></font></h5> 
+            <h5><u><font color="black">机制实验室版权所有&copy;2017</u></font></h5> 
         </div>
         <div class="table-container">
             
@@ -1427,8 +1308,9 @@ div {
 
         </div>
         <div>
-            <h5>页面刷新时间2017-07-30 11:16:28</h5>
+            <h5>页面刷新时间2017-07-30 23:43:22</h5>
         </div>
+
     </div>
     <script type="text/javascript">
         //判断一个url是否可以访问
@@ -1436,7 +1318,6 @@ div {
             $.ajax({
                 url:_url,
                 type:"get",
-                
                 success:function(){
                     //说明请求的url存在，并且可以访问
                     document.getElementById("cat").innerHTML = "<font color='green'>当前处于内网，点击姓名可以查看票数变化曲线</font>";
