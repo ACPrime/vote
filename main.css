@@ -145,7 +145,7 @@ h6 {
 blockquote {
     background-color: #f5f2f0;
     padding: 1em;
-    margin: 2em 2em;
+    margin: 1em em;
     font-family: Consolas, Monaco, 'Andale Mono', monospace;
     -moz-border-radius: 1em;
     /* FF1+ */
