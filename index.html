@@ -165,7 +165,7 @@ div {
         var diffM = Math.floor(diffDate/60000)%60;
         var diffS = Math.floor(diffDate/1000)%60;
         document.getElementById("time").innerHTML = "当前时间：" + nowMM + "月" + nowD + "日 " + (nowH < 10 ? '0' : '') + nowH + ":" + (nowM < 10 ? '0' : '') + nowM + ":" + (nowS < 10 ? '0' : '') + nowS;
-        document.getElementById("if-time").innerHTML = "7月31日投票倒计时:"+diffH+"时"+diffM+"分"+diffS+"秒";
+        document.getElementById("if-time").innerHTML = "7月31日投票倒计时:"+(diffH>0? diffH+"时": '')+(diffM>0? diffM+"分": '')+(diffS>0? diffS+"秒": '');;
         if ((nowMM == 7 && nowD >= 27) || (nowMM == 8 && nowD <= 5)) {
             if ((nowH >= 7 && nowH < 11) || (nowH == 11 && nowM <= 9)) {
                 document.getElementById("if-time").innerHTML = "正在进行"+nowMM+"月"+nowD+ "日投票";
@@ -174,7 +174,7 @@ div {
                 diffH = Math.floor(diffDate/3600000);
                 diffM = Math.floor(diffDate/60000)%60;
                 diffS = Math.floor(diffDate/1000)%60;
-                document.getElementById("if-time").innerHTML = nowMM+"月"+nowD+ "日投票倒计时:"+diffH+"时"+diffM+"分"+diffS+"秒";
+                document.getElementById("if-time").innerHTML = nowMM+"月"+nowD+ "日投票时间仅剩:"+(diffH>0? diffH+"时": '')+(diffM>0? diffM+"分": '')+(diffS>0? diffS+"秒": '');
             }
         }
         setTimeout("showtime()", 1000);
@@ -1427,7 +1427,7 @@ div {
 
         </div>
         <div>
-            <h5>页面刷新时间2017-07-30 10:50:03</h5>
+            <h5>页面刷新时间2017-07-30 10:51:20</h5>
         </div>
     </div>
     <script type="text/javascript">
