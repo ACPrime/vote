@@ -142,5 +142,20 @@ h6 {
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0078a5', endColorstr='#00adee');
 }
 
-
+blockquote {
+    background-color: #f5f2f0;
+    padding: 1em;
+    margin: 2em 2em;
+    font-family: Consolas, Monaco, 'Andale Mono', monospace;
+    -moz-border-radius: 1em;
+    /* FF1+ */
+    -webkit-border-radius: 1em;
+    /* Saf3+, Chrome */
+    border-radius: 1em;
+    font-family: Consolas, Monaco, 'Andale Mono', monospace;
+    border-width: 0.3em;
+    border-color: #e0dfcc;
+    border-style: solid;
+    text-shadow: 0 1px white;
+    overflow: auto;
 }
