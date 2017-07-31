@@ -166,3 +166,9 @@ blockquote {
     overflow: auto;
 
 }
+hr {
+    margin-top: 1px;
+    margin-bottom: 1px;
+    border: 0;
+    border-top: 4px dotted #e0dfcc;
+}
