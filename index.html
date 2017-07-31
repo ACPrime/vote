@@ -12,7 +12,7 @@
     <!-- Bootstrap -->
     <link href="http://apps.bdimg.com/libs/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
     <link href="http://phdwu.com/vote/main.css" rel="stylesheet">
-
+    <link rel="stylesheet" type="text/css" href="http://phdwu.com/vote/mdialog.css">
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.0.min.js"></script>
     <script type="text/javascript">
     window.onload=function()
@@ -98,7 +98,9 @@
     function vote(){
         if(isWeiXin())
         {
-            window.location.href="http://weitac.sdetv.com.cn/pages/zmjs2017_mobile_index0725.html";
+            new TipBox({type:'load',str:"请投2057刘永红一票！<br>努力跳转投票页面中...",setTime:2500,callBack:function(){  
+                window.location.href="http://weitac.sdetv.com.cn/pages/zmjs2017_mobile_index0725.html";  
+            }});
         }
         else {
             document.getElementById("qr").innerHTML =  "请用<b>手机微信</b>扫一扫下方二维码进入投票页面";
@@ -114,7 +116,14 @@
             return false; 
         }
     }
+    function load(){ 
+        new TipBox({type:'load',str:"请投2057刘永红一票！<br>努力跳转投票页面中...",setTime:2500,callBack:function(){  
+            window.location.href="http://www.sdetv.com.cn/";  
+        }});  
+    }  
     </script>
+    <script type="text/javascript" src="http://phdwu.com/vote/zepto.min.js"></script>
+    <script type="text/javascript" src="http://phdwu.com/vote/mdialog.js"></script>
 </head>
 
 <body>
@@ -1296,7 +1305,7 @@
 
         </div>
         <div>
-            <h5>页面刷新时间2017-07-31 16:54:20</h5>
+            <h5>页面刷新时间2017-07-31 22:47:40</h5>
             <h5><script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1253443781'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "v1.cnzz.com/stat.php%3Fid%3D1253443781%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script></h5>
         </div>
 
