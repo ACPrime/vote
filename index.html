@@ -17,11 +17,11 @@
     window.onload=function()
     {
         if(isWeiXin()==false){
-            document.getElementById("type").innerHTML="您当前使用的是" + getExploreName() + "浏览器，请依次点击下方按钮关注SDETV并投票："
+            document.getElementById("type").innerHTML="您使用的是" + getExploreName() + "浏览器，请依次点击下方按钮关注SDETV并投票："
             document.getElementById("tishi").innerHTML="您还可以直接在微信中打开本页面投票，更加方便快捷。"
         }
         else{
-            document.getElementById("type").innerHTML="您当前使用的是微信浏览器，请依次点击下方按钮关注SDETV并投票："
+            document.getElementById("type").innerHTML="您使用的是微信浏览器，请依次点击下方按钮关注SDETV并投票："
             document.getElementById("tishi").innerHTML="关注公众号之后请<b>返回本页面</b>，如已关注直接点击第二步。"
         }
     }
@@ -48,7 +48,7 @@
                 diffH = Math.floor(diffDate/3600000);
                 diffM = Math.floor(diffDate/60000)%60;
                 diffS = Math.floor(diffDate/1000)%60;
-                document.getElementById("if-time").innerHTML = nowMM+"月"+nowD+ "日投票时间仅剩:"+(diffH>0? diffH+"时": '')+(diffM>0? diffM+"分": '')+(diffS>0? diffS+"秒": '');
+                document.getElementById("if-time").innerHTML = nowMM+"月"+nowD+ "日投票时间仅剩:"+(diffH>0? diffH+"时": '')+(diffM>0? diffM+"分": '')+(diffS>0&&diffH==0? diffS+"秒": '');
             }
         }
         setTimeout("showtime()", 1000);
@@ -267,7 +267,7 @@
             
                 <td class="Category">7.31</td>
             
-                <td class="Vote">2109</td>
+                <td class="Vote">2112</td>
             
         </tr>
         
@@ -469,7 +469,7 @@
             
                 <td class="Category">7.31</td>
             
-                <td class="Vote">358</td>
+                <td class="Vote">365</td>
             
         </tr>
         
@@ -487,7 +487,7 @@
             
                 <td class="Category">7.31</td>
             
-                <td class="Vote">145</td>
+                <td class="Vote">147</td>
             
         </tr>
         
@@ -577,7 +577,7 @@
             
                 <td class="Category">7.31</td>
             
-                <td class="Vote">110</td>
+                <td class="Vote">111</td>
             
         </tr>
         
@@ -614,7 +614,7 @@
             
                 <td class="Category">7.31</td>
             
-                <td class="Vote">64</td>
+                <td class="Vote">66</td>
             
         </tr>
         
@@ -1294,7 +1294,7 @@
 
         </div>
         <div>
-            <h5>页面刷新时间2017-07-31 10:30:05</h5>
+            <h5>页面刷新时间2017-07-31 10:33:50</h5>
             <h5><script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1253443781'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "v1.cnzz.com/stat.php%3Fid%3D1253443781%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script></h5>
         </div>
 
