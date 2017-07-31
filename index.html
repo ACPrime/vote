@@ -27,7 +27,7 @@
     }
     function showtime() {
         var myDate = new Date();
-        var nextDate = new Date("2017-07-31 07:00");
+        var nextDate = new Date("2017-08-01 07:00");
         var diffDate = (nextDate - myDate);
         var nowMM = myDate.getMonth() + 1;
         var nowD = myDate.getDate();
@@ -39,7 +39,7 @@
         var diffM = Math.floor(diffDate/60000)%60;
         var diffS = Math.floor(diffDate/1000)%60;
         document.getElementById("time").innerHTML = "当前时间：" + nowMM + "月" + nowD + "日 " + (nowH < 10 ? '0' : '') + nowH + ":" + (nowM < 10 ? '0' : '') + nowM + ":" + (nowS < 10 ? '0' : '') + nowS;
-        document.getElementById("if-time").innerHTML = "7月31日投票倒计时:"+(diffH>0? diffH+"时": '')+(diffM>0? diffM+"分": '')+(diffS>0? diffS+"秒": '');
+        document.getElementById("if-time").innerHTML = "8月1日投票倒计时:"+(diffH>0? diffH+"时": '')+(diffM>0? diffM+"分": '')+(diffS>0? diffS+"秒": '');
         if ((nowMM == 7 && nowD >= 27) || (nowMM == 8 && nowD <= 5)) {
             if ((nowH >= 7 && nowH < 11) || (nowH == 11 && nowM <= 9)) {
                 document.getElementById("if-time").innerHTML = "正在进行"+nowMM+"月"+nowD+ "日投票";
@@ -89,7 +89,7 @@
             document.getElementById("qr").innerHTML="<img src='http://phdwu.com/vote/sdetv.gif' width='280px'> ";
         }
         else {
-            document.getElementById("qr").innerHTML =  "请用手机微信扫一扫下方二维码关注公众号";
+            document.getElementById("qr").innerHTML =  "请用<b>手机微信</b>扫一扫下方二维码关注公众号";
             document.getElementById("qr").innerHTML =  document.getElementById("qr").innerHTML+"<br><img src='http://phdwu.com/vote/sdetv.jpg' width='180px'> ";
         }
     }
@@ -100,7 +100,7 @@
             window.location.href="http://weitac.sdetv.com.cn/pages/zmjs2017_mobile_index0725.html";
         }
         else {
-            document.getElementById("qr").innerHTML =  "请用手机微信扫一扫下方二维码进入投票页面";
+            document.getElementById("qr").innerHTML =  "请用<b>手机微信</b>扫一扫下方二维码进入投票页面";
             document.getElementById("qr").innerHTML =  document.getElementById("qr").innerHTML+"<br><img src='http://phdwu.com/vote/qrcode.png' width='180px'>";
         }
     }
@@ -1294,7 +1294,8 @@
 
         </div>
         <div>
-            <h5>页面刷新时间2017-07-31 10:00:05</h5>
+            <h5>页面刷新时间2017-07-31 10:04:49</h5>
+            <h5><script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1253443781'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "v1.cnzz.com/stat.php%3Fid%3D1253443781%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script></h5>
         </div>
 
     </div>
@@ -1317,6 +1318,7 @@
         //调用
         IsLoad("http://172.18.204.163");
     </script>
+    
 </body>
 
 </html>
