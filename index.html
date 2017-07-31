@@ -17,17 +17,13 @@
     window.onload=function()
     {
         if(isWeiXin()==false){
-            var el = document.getElementById('weixin');
-            el.parentNode.removeChild(el);
             document.getElementById("type").innerHTML="您当前使用的是" + getExploreName() + "浏览器，请依次点击下方按钮关注SDETV并投票："
+            document.getElementById("tishi").innerHTML="您还可以直接在微信中打开本页面投票，更加方便快捷。"
         }
         else{
-            var el = document.getElementById('not-weixin');
-            el.parentNode.removeChild(el);
             document.getElementById("type").innerHTML="您当前使用的是微信浏览器，请依次点击下方按钮关注SDETV并投票："
-            
+            document.getElementById("tishi").innerHTML="关注公众号之后请<b>返回本页面</b>，如已关注直接点击第二步。"
         }
-        
     }
     function showtime() {
         var myDate = new Date();
@@ -125,24 +121,14 @@
         <div>
             
             <h1>2017齐鲁最美教师60强晋级30强评选</h1>
-            <div style="margin:0 auto;" id="weixin">
+            <div style="margin:0 auto;">
                 <blockquote>
                     <b>投票方法：</b><br>
                     <p id="type"></p>
                     <input type="button" name="Submit" value="第一步：关注" onclick="follow()" class="button blue"/>       
                     <input type="button" name="Submit" value="第二步：投票" onclick="vote()" class="button blue"/><br>
-                    关注公众号之后请返回本页面，如已关注直接点击第二步。
-                <h5><p id = "qr"></p></h5>
-                </blockquote>
-            </div>
-            <div style="margin:0 auto;" id="not-weixin">
-                <blockquote>
-                    <b>投票方法：</b><br>
-                    <p id="type"></p>
-                    <input type="button" name="Submit" value="第一步：关注" onclick="follow()" class="button blue"/>       
-                    <input type="button" name="Submit" value="第二步：投票" onclick="vote()" class="button blue"/>
+                    <p id="tishi"></p>
                     <h5><p id = "qr"></p></h5>
-                您还可以直接在微信中打开本页面投票，更加方便快捷。
                 </blockquote>
             </div>
             <h3 id="time"><script type="text/javascript">showtime();</script></h3>
@@ -300,7 +286,7 @@
             
                 <td class="Category">7.31</td>
             
-                <td class="Vote">1949</td>
+                <td class="Vote">1972</td>
             
         </tr>
         
@@ -483,7 +469,7 @@
             
                 <td class="Category">7.31</td>
             
-                <td class="Vote">288</td>
+                <td class="Vote">314</td>
             
         </tr>
         
@@ -573,7 +559,7 @@
             
                 <td class="Category">7.31</td>
             
-                <td class="Vote">90</td>
+                <td class="Vote">92</td>
             
         </tr>
         
@@ -610,7 +596,7 @@
             
                 <td class="Category">7.31</td>
             
-                <td class="Vote">46</td>
+                <td class="Vote">48</td>
             
         </tr>
         
@@ -628,7 +614,7 @@
             
                 <td class="Category">7.31</td>
             
-                <td class="Vote">36</td>
+                <td class="Vote">39</td>
             
         </tr>
         
@@ -646,7 +632,7 @@
             
                 <td class="Category">7.31</td>
             
-                <td class="Vote">34</td>
+                <td class="Vote">37</td>
             
         </tr>
         
@@ -1308,7 +1294,7 @@
 
         </div>
         <div>
-            <h5>页面刷新时间2017-07-31 09:50:05</h5>
+            <h5>页面刷新时间2017-07-31 10:00:05</h5>
         </div>
 
     </div>
