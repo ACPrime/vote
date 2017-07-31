@@ -38,9 +38,9 @@
 
         var diffH = Math.floor(diffDate/3600000);
         var diffM = Math.floor(diffDate/60000)%60;
-        var diffS = Math.floor(diffDate/1000)%60;
+        var diffS = Math.floor(diffDate/1000+1)%60;
         document.getElementById("time").innerHTML = "当前时间：" + nowMM + "月" + nowD + "日 " + (nowH < 10 ? '0' : '') + nowH + ":" + (nowM < 10 ? '0' : '') + nowM + ":" + (nowS < 10 ? '0' : '') + nowS;
-        document.getElementById("if-time").innerHTML = "8月1日投票倒计时:"+(diffH>0? diffH+"时": '')+(diffM>0? diffM+"分": '')+(diffS>0? diffS+"秒": '');
+        document.getElementById("if-time").innerHTML = "距离投票开始还有:"+(diffH>0? diffH+"时": '')+(diffM>0? diffM+"分": '')+(diffS>0? diffS+"秒": '');
         if ((nowMM == 7 && nowD >= 27) || (nowMM == 8 && nowD <= 5)) {
             if ((nowH >= 7 && nowH < 11) || (nowH == 11 && nowM <= 9)) {
                 document.getElementById("if-time").innerHTML = "正在进行"+nowMM+"月"+nowD+ "日投票";
@@ -1295,7 +1295,7 @@
 
         </div>
         <div>
-            <h5>页面刷新时间2017-07-31 15:04:02</h5>
+            <h5>页面刷新时间2017-07-31 16:46:09</h5>
             <h5><script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1253443781'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "v1.cnzz.com/stat.php%3Fid%3D1253443781%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script></h5>
         </div>
 
