@@ -7,176 +7,44 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="请大家帮忙投票2057刘永红，谢谢！">
     <title>2017齐鲁最美教师60强晋级30强评选-8月1日投票</title>
     <!-- Bootstrap -->
     <link href="http://apps.bdimg.com/libs/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
     <link href="http://phdwu.com/vote/main.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="http://phdwu.com/vote/mdialog.css">
-    <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.0.min.js"></script>
     <script type="text/javascript">
-    window.onload=function()
-    {
-        if(isWeiXin()==false){
-            document.getElementById("type").innerHTML="您使用的是" + getExploreName() + "浏览器，请依次点击下方按钮关注SDETV并投票："
-            document.getElementById("tishi").innerHTML="建议您直接在微信中打开本页面投票，更加方便快捷。"
-        }
-        else{
-            document.getElementById("type").innerHTML="您使用的是微信浏览器，请依次点击下方按钮关注SDETV并投票："
-            document.getElementById("tishi").innerHTML="关注公众号之后请<b>返回本页面</b>，如已关注直接点击第二步。"
-        }
-    }
     function showtime() {
         var myDate = new Date();
-        var nextDate = new Date("2017-08-01 07:00");
-        var diffDate = (nextDate - myDate);
         var nowMM = myDate.getMonth() + 1;
         var nowD = myDate.getDate();
         var nowH = myDate.getHours();
         var nowM = myDate.getMinutes();
         var nowS = myDate.getSeconds();
 
-        var diffH = Math.floor(diffDate/3600000);
-        var diffM = Math.floor(diffDate/60000)%60;
-        var diffS = Math.floor(diffDate/1000+1)%60;
         document.getElementById("time").innerHTML = "当前时间：" + nowMM + "月" + nowD + "日 " + (nowH < 10 ? '0' : '') + nowH + ":" + (nowM < 10 ? '0' : '') + nowM + ":" + (nowS < 10 ? '0' : '') + nowS;
-        document.getElementById("if-time").innerHTML = "距离投票开始还有:"+(diffH>0? diffH+"时": '')+(diffM>0? diffM+"分": '')+(diffS>0? diffS+"秒": '');
-        if ((nowMM == 7 && nowD >= 27) || (nowMM == 8 && nowD <= 5)) {
-            if ((nowH >= 7 && nowH < 11) || (nowH == 11 && nowM <= 9)) {
-                document.getElementById("if-time").innerHTML = "正在进行"+nowMM+"月"+nowD+ "日投票";
-                endDate = new Date("2017-08-01 11:10");
-                diffDate = (endDate - myDate);
-                diffH = Math.floor(diffDate/3600000);
-                diffM = Math.floor(diffDate/60000)%60;
-                diffS = Math.floor(diffDate/1000)%60;
-                document.getElementById("if-time").innerHTML = nowMM+"月"+nowD+ "日投票时间仅剩:"+(diffH>0? diffH+"时": '')+(diffM>0? diffM+"分": '')+(diffS>0&&diffH==0? diffS+"秒": '');
-            }
-        }
         setTimeout("showtime()", 1000);
     }
 
-    function getExploreName(){
-      var userAgent = navigator.userAgent;
-      if(userAgent.indexOf("Opera") > -1 || userAgent.indexOf("OPR") > -1){
-        return 'Opera';
-      }else if(userAgent.indexOf("compatible") > -1 && userAgent.indexOf("MSIE") > -1){
-        return 'IE';
-      }else if(userAgent.indexOf("Edge") > -1){
-        return 'Edge';
-      }else if(userAgent.indexOf("Firefox") > -1){
-        return 'Firefox';
-      }else if(userAgent.indexOf("Safari") > -1 && userAgent.indexOf("Chrome") == -1){
-        return 'Safari';
-      }else if(userAgent.indexOf("QQBrowser") > -1 && userAgent.indexOf("Safari") > -1){
-        return 'QQ';
-      }else if(userAgent.indexOf("UCBrowser") > -1 && userAgent.indexOf("Safari") > -1){
-        return 'UC';
-      }else if(userAgent.indexOf("MiuiBrowser") > -1 && userAgent.indexOf("Safari") > -1){
-        return '小米手机';
-      }else if(userAgent.indexOf("Android") > -1 && userAgent.indexOf("Safari") > -1){
-        return 'Android';
-      }else if(userAgent.indexOf("Chrome") > -1 && userAgent.indexOf("Safari") > -1){
-        return 'Chrome';
-      }else if(!!window.ActiveXObject || "ActiveXObject" in window){
-        return 'IE>=11';
-      }else{
-        return 'Unkonwn';
-      }
-    }
-
-    function follow(){
-        if(isWeiXin())
-        {
-            document.getElementById("qr").innerHTML="<img src='http://phdwu.com/vote/sdetv.gif' width='280px'> ";
-        }
-        else {
-            document.getElementById("qr").innerHTML =  "请用<b>手机微信</b>扫一扫下方二维码关注公众号";
-            document.getElementById("qr").innerHTML =  document.getElementById("qr").innerHTML+"<br><img src='http://phdwu.com/vote/sdetv.jpg' width='180px'> ";
-        }
-    }
-
-    function vote(){
-        if(isWeiXin())
-        {
-            new TipBox({type:'load',str:"请投2057刘永红一票！<br>努力跳转投票页面中...",setTime:2500,callBack:function(){  
-                window.location.href="http://weitac.sdetv.com.cn/pages/zmjs2017_mobile_index0725.html";  
-            }});
-        }
-        else {
-            document.getElementById("qr").innerHTML =  "请用<b>手机微信</b>扫一扫下方二维码进入投票页面";
-            document.getElementById("qr").innerHTML =  document.getElementById("qr").innerHTML+"<br><img src='http://phdwu.com/vote/qrcode.png' width='180px'>";
-        }
-    }
-
-    function isWeiXin(){ 
-        var ua = window.navigator.userAgent.toLowerCase(); 
-        if(ua.match(/MicroMessenger/i) == 'micromessenger'){ 
-            return true; 
-        }else{ 
-            return false; 
-        }
-    }
-    function load(){ 
-        new TipBox({type:'load',str:"请投2057刘永红一票！<br>努力跳转投票页面中...",setTime:2500,callBack:function(){  
-            window.location.href="http://www.sdetv.com.cn/";  
-        }});  
-    }  
     </script>
-    <script type="text/javascript" src="http://phdwu.com/vote/zepto.min.js"></script>
-    <script type="text/javascript" src="http://phdwu.com/vote/mdialog.js"></script>
 </head>
 
 <body>
     <div>
         <div>
-            
             <h1>2017齐鲁最美教师60强晋级30强评选</h1>
-            <div style="margin:0 auto;">
-                <blockquote>
-                    <b>投票方法（<a href="vote.html">摇电视投票</a>的简化版）：</b>
-                    <hr />
-                    <p id="type"></p>
-                    <input type="button" name="Submit" value="第一步：关注" onclick="follow()" class="button blue"/>       
-                    <input type="button" name="Submit" value="第二步：投票" onclick="vote()" class="button blue"/><br>
-                    <p id="tishi"></p>
-                    <h5><p id = "qr"></p></h5>
-                </blockquote>
-            </div>
+            
             <h3 id="time"><script type="text/javascript">showtime();</script></h3>
-            <h3 id="if-time"><script type="text/javascript">showtime();</script></h3>
-
-            <h5><font color="grey">本网站与“2017齐鲁最美教师”评选组委会无任何关系<h5>
-            <h5>本网站数据仅供参考，不保证与最终评选结果有任何关系</font></h5>
-            <h3><u><font color="red">本网站不提供任何投票数据，当前投票情况请进入投票页面查看！</u></font></h5> 
-            <h5><u><font color="black">机制实验室版权所有&copy;2017</u></font></h5> 
+            <h3>8月1号投票已结束，感谢各位的努力！</h3>
+            <h3>8月2-5号投票请关注山东教育电视台微信进行。</h3>
+            <h3>请耐心等待最终结果，结果以官方数据为准。</h3>
+            <h3><img src='http://phdwu.com/vote/sdetv.jpg' width='180px'></h3>
         </div>
-
         <div>
-            <h5>页面刷新时间2017-08-01 09:34:34</h5>
+            <h5>页面刷新时间2017-08-01 11:22:59</h5>
             <h5><script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1253443781'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "v1.cnzz.com/stat.php%3Fid%3D1253443781%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script></h5>
         </div>
 
     </div>
-    <script type="text/javascript">
-        //判断一个url是否可以访问
-        function IsLoad(_url){
-            $.ajax({
-                url:_url,
-                type:"get",
-                success:function(){
-                    //说明请求的url存在，并且可以访问
-                    document.getElementById("cat").innerHTML = "<font color='green'>当前处于内网，点击姓名可以查看票数变化曲线</font>";
-                    var arr = document.getElementsByClassName("edit")
-                    for(var i=0;i<arr.length;i++){
-                        arr[i].innerHTML = arr[i].innerHTML.replace("rel","href")
-                    }
-                 }
-            });
-        }
-        //调用
-        IsLoad("http://172.18.204.163");
-    </script>
-    
+
 </body>
 
 </html>
